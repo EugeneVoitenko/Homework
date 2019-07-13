@@ -1,7 +1,7 @@
 @import './fonts.css';
 
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 html {
@@ -43,6 +43,12 @@ ul, ol {
     text-align: center;
     color: #ffffff;
     text-decoration: none;
+    transition: 200ms;
+}
+
+.page-nav__link:hover {
+    color: #666666;
+    transition: 200ms;
 }
 
 .page-nav__switcher {
@@ -91,6 +97,110 @@ ul, ol {
     width: 100%;
 }
 
+.page-nav_logo {
+    width: 20px;
+    height: 100%;
+    background-size: 20px 44px;
+    background-image: url(../../assets/images/lesson_6/apple_image.svg);
+    background-repeat: no-repeat;
+    border: 1px solid red;
+    text-align: center;
+}
+
+.chapter-nav {
+    height: 116px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: flex;
+    justify-content: center;
+    background: rgba(242,242,242,0.7);
+}
+
+.chapter-nav__items {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    vertical-align: top;
+}
+
+.chapter-nav__item {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 20px;
+}
+
+.chapter-nav__link {
+    margin-top: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    text-align: center;
+    color: rgba(0,0,0,0.8);
+    text-decoration: none;
+}
+
+.chapter-nav__link:hover {
+    color: #0070c9;
+}
+
+.chapter-nav__icon {
+    height: 54px;
+    margin: 0 auto 6px;
+    background-repeat: no-repeat;
+}
+
+.chapter-nav-icon__iphone-x {
+    width: 20px;
+    background-size: 20px 54px;
+    background-image: url(../../assets/images/lesson_6/iphone-x.svg);
+}
+
+.chapter-nav-icon__iphone-8 {
+    width: 37px;
+    background-size: 37px 54px;
+    background-image: url(../../assets/images/lesson_6/iphone8_large.svg);
+}
+
+.chapter-nav-icon__iphone-se {
+    width: 18px;
+    background-size: 18px 54px;
+    background-image: url(../../assets/images/lesson_6/iphonese_large.svg);
+}
+
+.chapter-nav-icon__ios11 {
+    width: 32px;
+    background-size: 32px 54px;
+    background-image: url(../../assets/images/lesson_6/iphone_ios_large.svg);
+}
+
+.chapter-nav-icon__accessories {
+    width: 44px;
+    background-size: 44px 54px;
+    background-image: url(../../assets/images/lesson_6/iphone_acc_large.svg);
+}
+
+.chapter-nav-icon__compare {
+    width: 50px;
+    background-size: 50px 54px;
+    background-image: url(../../assets/images/lesson_6/iphone_comp_large.svg);
+}
+
+.chapter-nav__label {
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 0.733rem;
+}
+
+.chapter-nav__new {
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 0.6rem;
+    color: #ef5602;
+    line-height: 1.22226;
+    font-weight: 400;
+    letter-spacing: -.006rem;
+}
+
 @media (max-width: 767px) {
     .page-nav__controls {
         display: flex;
@@ -132,4 +242,5 @@ ul, ol {
     .page-nav.opened .page-nav__link  {
         opacity: 1;
     }
+    
 }

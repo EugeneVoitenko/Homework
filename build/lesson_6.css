@@ -108,8 +108,7 @@ ul, ol {
   background-size: 20px 44px;
   background-image: url(./assets/images/apple_image.svg);
   background-repeat: no-repeat;
-  border: 1px solid red;
-  text-align: center; }
+  background-position: center center; }
 
 .chapter-nav {
   height: 116px;
@@ -190,6 +189,9 @@ ul, ol {
   line-height: 1.22226;
   font-weight: 400;
   letter-spacing: -.006rem; }
+
+.section {
+  text-align: center; }
 
 @media (max-width: 767px) {
   .page-nav__controls {

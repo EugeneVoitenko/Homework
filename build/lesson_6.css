@@ -223,8 +223,7 @@ h4 {
   letter-spacing: -0.006rem; }
 
 .section {
-  text-align: center;
-  /* display: block; */ }
+  text-align: center; }
 
 .section__iphone-x {
   margin-top: 20px;
@@ -271,11 +270,16 @@ h4 {
   background-repeat: no-repeat;
   background-position: center;
   margin: 64px auto;
-  background-image: url(./assets/images/iphone_x_large_2x.jpg);
+  background-image: url(./assets/images/iphone_8_large_2x.jpg);
   width: 980px;
   height: 206px;
   background-size: 980px 206px;
   display: inline-block; }
+
+.section__iphone-8 {
+  margin-top: 20px;
+  background: #f9f0eb;
+  text-align: center; }
 
 @media (max-width: 767px) {
   .page-nav__controls {

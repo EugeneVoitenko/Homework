@@ -215,7 +215,6 @@ h4 {
 
 .section {
   text-align: center;
-  /* display: block; */
 }
 
 .section__iphone-x {
@@ -272,11 +271,17 @@ h4 {
     background-repeat: no-repeat;
     background-position: center;
     margin: 64px auto;
-    background-image: url(../../assets/images/lesson_6/iphone_x_large_2x.jpg);
+    background-image: url(../../assets/images/lesson_6/iphone_8_large_2x.jpg);
     width: 980px;
     height: 206px;
     background-size: 980px 206px;
     display: inline-block;
+}
+
+.section__iphone-8 {
+  margin-top: 20px;
+  background: #f9f0eb;
+  text-align: center;
 }
 
 @media (max-width: 767px) {

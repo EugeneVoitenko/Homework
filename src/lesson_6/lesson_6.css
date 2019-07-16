@@ -225,6 +225,8 @@ h4 {
 
 .section__content {
   margin: 0 auto;
+  max-width: 990px;
+  border: 1px solid gray;
 }
 
 .section__description {
@@ -268,20 +270,30 @@ h4 {
 }
 
 .section__img {
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 64px auto;
-    background-image: url(../../assets/images/lesson_6/iphone_8_large_2x.jpg);
-    width: 980px;
-    height: 206px;
-    background-size: 980px 206px;
-    display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.section__iphone-x .section__img {
+  background-image: url(../../assets/images/lesson_6/iphone_x_large_2x.jpg);
+  width: 981px;
+  height: 206px;
+  background-size: 981px 206px;
+  margin: 64px auto;
 }
 
 .section__iphone-8 {
   margin-top: 20px;
   background: #f9f0eb;
   text-align: center;
+}
+
+.section__iphone-8 .section__img {
+  background-image: url(../../assets/images/lesson_6/iphone_8_large_2x.jpg);
+  width: 611px;
+  height: 498px;
+  background-size: 611px 498px;
+  margin: 0 auto;
 }
 
 @media (max-width: 767px) {
@@ -325,10 +337,11 @@ h4 {
   .page-nav.opened .page-nav__link {
     opacity: 1;
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .section__content {
-    max-width: 990px;
+  .section__iphone-x .section__img {
+    background-image: url(../../assets/images/lesson_6/iphone_x_small_2x.jpg);
+    background-size: 336px 71px;
+    width: 336px;
+    height: 71px;
   }
 }

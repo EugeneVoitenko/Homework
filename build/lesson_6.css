@@ -18,11 +18,32 @@
     font-weight: 200;
     src        : url(./assets/fonts/sf-pro-display_light.woff2) format('woff2');
 }
+
+@font-face {
+    font-family: 'SF Pro Text';
+    font-style : normal;
+    font-weight: 500;
+    src        : url(./assets/fonts/sf-pro-text_regular.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    font-style : normal;
+    font-weight: 600;
+    src        : url(./assets/fonts/sf-pro-text_semibold.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Icons';
+    font-style : normal;
+    font-weight: 500;
+    src        : url(./assets/fonts/SFProIcons_regular.woff) format('woff2');
+}
 * {
   box-sizing: border-box; }
 
 html {
-  font-family: 'SF Pro display';
+  font-family: "SF Pro display", Helvetica, Arial, sans-serif;
   font-size: 15px; }
 
 body {
@@ -30,9 +51,20 @@ body {
   padding: 0;
   margin: 0; }
 
-ul, ol {
+main {
+  display: block; }
+
+ul,
+ol {
   padding: 0;
   margin: 0; }
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0; }
 
 .page-nav {
   background-color: rgba(45, 45, 45, 0.98);
@@ -71,20 +103,20 @@ ul, ol {
   position: relative; }
 
 .page-nav__switcher:before {
-  content: '';
+  content: "";
   width: 100%;
   height: 1px;
-  background-color: #FFF;
+  background-color: #fff;
   position: absolute;
   top: 5px;
   left: 0;
   transition: all 200ms; }
 
 .page-nav__switcher:after {
-  content: '';
+  content: "";
   width: 100%;
   height: 1px;
-  background-color: #FFF;
+  background-color: #fff;
   position: absolute;
   bottom: 5px;
   left: 0;
@@ -179,19 +211,71 @@ ul, ol {
   background-image: url(./assets/images/iphone_comp_large.svg); }
 
 .chapter-nav__label {
-  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 0.733rem; }
 
 .chapter-nav__new {
-  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 0.6rem;
   color: #ef5602;
   line-height: 1.22226;
   font-weight: 400;
-  letter-spacing: -.006rem; }
+  letter-spacing: -0.006rem; }
 
 .section {
+  text-align: center;
+  /* display: block; */ }
+
+.section__iphone-x {
+  margin-top: 20px;
+  background: #f7f7f7;
   text-align: center; }
+
+.section__content {
+  margin: 0 auto; }
+
+.section__description {
+  padding-top: 70px; }
+
+.section__header_large {
+  font-size: 3.733rem; }
+
+.section__header_small {
+  font-size: 2.666rem; }
+
+.section__availability {
+  color: #888;
+  padding-top: 12px;
+  font-size: 1.066rem;
+  font-weight: 200; }
+
+.section__availability > span {
+  padding: 0 16px; }
+
+.section__link {
+  display: inline-block;
+  padding-top: 12px;
+  color: #0070c9;
+  font-size: 1.4rem;
+  font-weight: 200;
+  position: relative;
+  text-decoration: none; }
+
+.section__link:after {
+  content: ">";
+  font-size: 1.1rem;
+  position: absolute;
+  transform: translate(50%, 17%); }
+
+.section__img {
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 64px auto;
+  background-image: url(./assets/images/iphone_x_large_2x.jpg);
+  width: 980px;
+  height: 206px;
+  background-size: 980px 206px;
+  display: inline-block; }
 
 @media (max-width: 767px) {
   .page-nav__controls {
@@ -223,6 +307,10 @@ ul, ol {
     transition: opacity 150ms 30ms; }
   .page-nav.opened .page-nav__link {
     opacity: 1; } }
+
+@media screen and (min-width: 1200px) {
+  .section__content {
+    max-width: 990px; } }
 
 
 /*# sourceMappingURL=lesson_6.css.map*/

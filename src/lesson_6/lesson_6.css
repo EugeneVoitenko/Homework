@@ -231,9 +231,13 @@ h4 {
 }
 
 .section__description {
-  width: 80%;
   margin: 0 auto;
   border: 1px solid green;
+}
+
+.section__description_content {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .section__header_large {
@@ -275,6 +279,7 @@ h4 {
 .section__img {
   background-repeat: no-repeat;
   background-position: center;
+  border: 1px solid aquamarine;
 }
 
 .section__iphone-x .section__img {
@@ -306,25 +311,15 @@ h4 {
 }
 
 .section__compare-iphones .section__content {
-  padding-top: 0;
-}
+  padding-top: 0px;
+  }
 
 .section__grid-container {
-  display: flex;
-  border: 1px solid #000;
-}
-
-.section__row-reverse {
-  flex-direction: row-reverse;
-}
-
-.section__grid-item {
-  flex: 1;
-}
-
-.section__grid-item_left-aligment {
-  text-align: left;
-  align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    height: 100%;
+    border: 1px solid #000;
 }
 
 .section__compare-iphones .section__img {
@@ -332,6 +327,7 @@ h4 {
   width: 587px;
   height: 449px;
   background-size: 587px 449px;
+  margin: 32px 44px 0px;
 }
 
 @media (max-width: 767px) {
@@ -414,13 +410,8 @@ h4 {
     height: 229px;
   }
 
-  .section__grid-container {
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-
-  /* .section__compare-iphones .section__row-reverse {
-    flex-direction: column;
+  /* .section__compare-iphones .section__content {
+    padding-top: 0px;
   } */
 
   .section__compare-iphones .section__img {

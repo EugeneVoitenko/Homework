@@ -233,12 +233,10 @@ h4 {
 
 .section__content {
   padding-top: 70px;
-  margin: 0 auto;
-  border: 1px solid red; }
+  margin: 0 auto; }
 
 .section__description {
-  margin: 0 auto;
-  border: 1px solid green; }
+  margin: 0 auto; }
 
 .section__description_content {
   width: 80%;
@@ -276,15 +274,14 @@ h4 {
 
 .section__img {
   background-repeat: no-repeat;
-  background-position: center;
-  border: 1px solid aquamarine; }
+  background-position: center; }
 
 .section__iphone-x .section__img {
   background-image: url(./assets/images/iphone_x_large_2x.jpg);
   width: 981px;
   height: 206px;
   background-size: 981px 206px;
-  margin: 64px auto;
+  margin: 50px auto;
   display: inline-block; }
 
 .section__iphone-8 {
@@ -297,28 +294,28 @@ h4 {
   width: 611px;
   height: 498px;
   background-size: 611px 498px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-top: 50px; }
 
 .section__compare-iphones {
   margin-top: 20px;
   background-color: #fafafa; }
 
 .section__compare-iphones .section__content {
-  padding-top: 0px; }
+  padding-top: 70px; }
 
 .section__grid-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
-  height: 100%;
-  border: 1px solid #000; }
+  height: 100%; }
 
 .section__compare-iphones .section__img {
   background-image: url(./assets/images/compare_large_2x.jpg);
   width: 587px;
   height: 449px;
   background-size: 587px 449px;
-  margin: 32px 44px 0px; }
+  margin: 0 auto; }
 
 @media (max-width: 767px) {
   .page-nav__controls {
@@ -351,9 +348,10 @@ h4 {
   .page-nav.opened .page-nav__link {
     opacity: 1; }
   .section__content {
-    max-width: 336px; }
+    max-width: 336px;
+    padding-top: 55px; }
   .section__header_large {
-    font-size: 49px; }
+    font-size: 40px; }
   .section__header_small {
     font-size: 35px; }
   .section__availability {
@@ -364,22 +362,24 @@ h4 {
     background-image: url(./assets/images/iphone_x_small_2x.jpg);
     background-size: 336px 71px;
     width: 336px;
-    height: 71px; }
+    height: 71px;
+    margin-top: 35px; }
   .section__iphone-8 {
     margin-top: 12px; }
   .section__iphone-8 .section__img {
     background-image: url(./assets/images/iphone_8_small_2x.jpg);
     background-size: 321px 229px;
     width: 321px;
-    height: 229px; }
-  /* .section__compare-iphones .section__content {
-    padding-top: 0px;
-  } */
+    height: 229px;
+    margin-top: 35px; }
+  .section__compare-iphones .section__content {
+    padding-top: 55px; }
   .section__compare-iphones .section__img {
     background-image: url(./assets/images/compare_small_2x.jpg);
     background-size: 303px 275px;
     width: 303px;
-    height: 275px; } }
+    height: 275px;
+    margin-top: 35px; } }
 
 
 /*# sourceMappingURL=lesson_6.css.map*/

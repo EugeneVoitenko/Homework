@@ -227,12 +227,10 @@ h4 {
 .section__content {
   padding-top: 70px;
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 .section__description {
   margin: 0 auto;
-  border: 1px solid green;
 }
 
 .section__description_content {
@@ -279,7 +277,6 @@ h4 {
 .section__img {
   background-repeat: no-repeat;
   background-position: center;
-  border: 1px solid aquamarine;
 }
 
 .section__iphone-x .section__img {
@@ -287,7 +284,7 @@ h4 {
   width: 981px;
   height: 206px;
   background-size: 981px 206px;
-  margin: 64px auto;
+  margin: 50px auto;
   display: inline-block;
 }
 
@@ -303,6 +300,7 @@ h4 {
   height: 498px;
   background-size: 611px 498px;
   margin: 0 auto;
+  margin-top: 50px;
 }
 
 .section__compare-iphones {
@@ -311,15 +309,14 @@ h4 {
 }
 
 .section__compare-iphones .section__content {
-  padding-top: 0px;
-  }
+  padding-top: 70px;
+}
 
 .section__grid-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    height: 100%;
-    border: 1px solid #000;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  height: 100%;
 }
 
 .section__compare-iphones .section__img {
@@ -327,7 +324,7 @@ h4 {
   width: 587px;
   height: 449px;
   background-size: 587px 449px;
-  margin: 32px 44px 0px;
+  margin: 0 auto;
 }
 
 @media (max-width: 767px) {
@@ -374,10 +371,11 @@ h4 {
 
   .section__content {
     max-width: 336px;
+    padding-top: 55px;
   }
 
   .section__header_large {
-    font-size: 49px;
+    font-size: 40px;
   }
 
   .section__header_small {
@@ -397,6 +395,7 @@ h4 {
     background-size: 336px 71px;
     width: 336px;
     height: 71px;
+    margin-top: 35px;
   }
 
   .section__iphone-8 {
@@ -408,17 +407,18 @@ h4 {
     background-size: 321px 229px;
     width: 321px;
     height: 229px;
+    margin-top: 35px;
   }
 
-  /* .section__compare-iphones .section__content {
-    padding-top: 0px;
-  } */
+  .section__compare-iphones .section__content {
+    padding-top: 55px;
+  }
 
   .section__compare-iphones .section__img {
     background-image: url(../../assets/images/lesson_6/compare_small_2x.jpg);
     background-size: 303px 275px;
     width: 303px;
     height: 275px;
+    margin-top: 35px;
   }
-  
 }

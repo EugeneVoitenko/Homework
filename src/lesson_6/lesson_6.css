@@ -126,6 +126,7 @@ h4 {
   display: flex;
   justify-content: center;
   background: rgba(242, 242, 242, 0.7);
+  min-width: 768px;
 }
 
 .chapter-nav__items {
@@ -225,11 +226,28 @@ h4 {
 
 .section__content {
   margin: 0 auto;
-  max-width: 990px;
+  /* max-width: 990px; */
+  border: 1px solid red;
+}
+
+.section__grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  border: 1px solid #000;
+}
+
+.section__grid-item {
+  flex: 1;
+}
+
+.section__row-reverse {
+  flex-direction: row-reverse;
 }
 
 .section__description {
   padding-top: 70px;
+  border: 1px solid green;
 }
 
 .section__header_large {
@@ -294,6 +312,19 @@ h4 {
   height: 498px;
   background-size: 611px 498px;
   margin: 0 auto;
+}
+
+.section-compare-iphones {
+  margin-top: 20px;
+  background-color: #fafafa;
+  text-align: left;
+}
+
+.section-compare-iphones .section__img {
+  background-image: url(../../assets/images/lesson_6/compare_large_2x.jpg);
+  width: 587px;
+  height: 449px;
+  background-size: 587px 449px;
 }
 
 @media (max-width: 767px) {

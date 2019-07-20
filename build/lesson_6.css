@@ -71,17 +71,14 @@ h4 {
   display: flex;
   justify-content: center;
   height: 50px;
-  padding: 0 8px;
-}
+  padding: 0 8px; }
 
 .page-nav__menu {
   display: flex;
   justify-content: space-between;
   max-width: 960px;
   width: 100%;
-  list-style: none;
-}
-  
+  list-style: none; }
 
 .page-nav__link {
   height: 100%;
@@ -152,8 +149,7 @@ h4 {
   display: flex;
   justify-content: center;
   background: rgba(242, 242, 242, 0.7);
-  min-width: 768px;
-}
+  min-width: 768px; }
 
 .chapter-nav__items {
   display: flex;
@@ -161,8 +157,7 @@ h4 {
   height: 100%;
   width: 100%;
   list-style: none;
-  vertical-align: top;
-}
+  vertical-align: top; }
 
 .chapter-nav__item {
   display: inline-block;

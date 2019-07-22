@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/index/index.scss"],"names":[],"mappings":"AAAA;AACA;AACA,4CAA4C;;AAE5C;AACA;AACA,iBAAiB","file":"index.css","sourcesContent":["body {\n  background: #f9f0eb;\n  font-family: Arial, Helvetica, sans-serif; }\n\na {\n  text-decoration: none;\n  color: #0070c9; }\n"],"sourceRoot":""}

@@ -13,7 +13,7 @@
 <body>
   <div style="text-align: center;">
     <div style="display: inline-block; text-align: center;">
-      <h1 style="font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: grey;">Simple traffic light ver: 1.01</h1>
+      <h1 style="font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: grey;">Simple traffic light ver: 1.02</h1>
       <button
         style="width: 100px; height: 100px; background-color: red; color: grey; outline: none; border-radius: 50%;"
         onclick="toggleColorRed()" id="btnRed">RED</button><br>
@@ -28,28 +28,19 @@
     const yellowLightBtn = document.querySelector('#btnYellow');
     const greenLightBtn = document.querySelector('#btnGreen');
     function toggleColorRed() {
-      if (redLightBtn.style.backgroundColor === 'red') {
-      } else {
         redLightBtn.style.backgroundColor = 'red';
         yellowLightBtn.style.backgroundColor = '';
         greenLightBtn.style.backgroundColor = '';
       }
-    }
     function toggleColorYellow() {
-      if (yellowLightBtn.style.backgroundColor === 'yellow') {
-      } else {
         yellowLightBtn.style.backgroundColor = 'yellow';
         redLightBtn.style.backgroundColor = '';
         greenLightBtn.style.backgroundColor = '';
-      }
     }
     function toggleColorGreen() {
-      if (greenLightBtn.style.backgroundColor === 'green') {
-      } else {
         greenLightBtn.style.backgroundColor = 'green'
         redLightBtn.style.backgroundColor = '';
         yellowLightBtn.style.backgroundColor = '';
-      }
     }
   </script>
 <script type="text/javascript" src="lesson_9.js"></script></body>

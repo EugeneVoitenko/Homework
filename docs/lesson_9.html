@@ -14,12 +14,13 @@
   <div style="text-align: center;">
     <div style="display: inline-block; text-align: center;">
       <h1 style="font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: grey;">Simple traffic light</h1>
-      <button style="width: 100px; height: 100px; background-color: red; color: grey; outline: none; border-radius: 50%;"
+      <button
+        style="width: 100px; height: 100px; background-color: red; color: grey; outline: none; border-radius: 50%;"
         onclick="toggleColorRed()" id="btnRed">RED</button><br>
-      <button style="width: 100px; height: 100px; color: grey; outline: none; border-radius: 50%;" onclick="toggleColorYellow()"
-        id="btnYellow">YELLOW</button><br>
-      <button style="width: 100px; height: 100px; color: grey; outline: none; border-radius: 50%;" onclick="toggleColorGreen()"
-        id="btnGreen">GREEN</button><br>
+      <button style="width: 100px; height: 100px; color: grey; outline: none; border-radius: 50%;"
+        onclick="toggleColorYellow()" id="btnYellow">YELLOW</button><br>
+      <button style="width: 100px; height: 100px; color: grey; outline: none; border-radius: 50%;"
+        onclick="toggleColorGreen()" id="btnGreen">GREEN</button><br>
     </div>
   </div>
   <script>
@@ -35,19 +36,19 @@
       }
     }
     function toggleColorYellow() {
-      if (redLightBtn.style.backgroundColor === 'yellow') {
+      if (yellowLightBtn.style.backgroundColor === 'yellow') {
       } else {
-        redLightBtn.style.backgroundColor = '';
         yellowLightBtn.style.backgroundColor = 'yellow';
+        redLightBtn.style.backgroundColor = '';
         greenLightBtn.style.backgroundColor = '';
       }
     }
     function toggleColorGreen() {
-      if (redLightBtn.style.backgroundColor === 'green') {
+      if (greenLightBtn.style.backgroundColor === 'green') {
       } else {
+        greenLightBtn.style.backgroundColor = 'green'
         redLightBtn.style.backgroundColor = '';
         yellowLightBtn.style.backgroundColor = '';
-        greenLightBtn.style.backgroundColor = 'green'
       }
     }
   </script>

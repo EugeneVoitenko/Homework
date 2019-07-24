@@ -17,7 +17,7 @@
       <h4 style="font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: lightgrey">ver: 1.03</h4>
       <br>
       <button
-        style="width: 100px; height: 100px; background-color: red; color: grey; outline: none; border-radius: 50%;"
+        style="width: 100px; height: 100px; background-color: #FF3B30; color: grey; outline: none; border-radius: 50%;"
         onclick="toggleColorRed()" id="btnRed">RED</button><br>
       <button style="width: 100px; height: 100px; color: grey; outline: none; border-radius: 50%;"
         onclick="toggleColorYellow()" id="btnYellow">YELLOW</button><br>
@@ -30,17 +30,17 @@
     const yellowLightBtn = document.querySelector('#btnYellow');
     const greenLightBtn = document.querySelector('#btnGreen');
     function toggleColorRed() {
-      redLightBtn.style.backgroundColor = 'red';
+      redLightBtn.style.backgroundColor = '#FF3B30';
       yellowLightBtn.style.backgroundColor = '';
       greenLightBtn.style.backgroundColor = '';
     }
     function toggleColorYellow() {
-      yellowLightBtn.style.backgroundColor = 'yellow';
+      yellowLightBtn.style.backgroundColor = '#FFCC00';
       redLightBtn.style.backgroundColor = '';
       greenLightBtn.style.backgroundColor = '';
     }
     function toggleColorGreen() {
-      greenLightBtn.style.backgroundColor = 'green'
+      greenLightBtn.style.backgroundColor = '#34C759'
       redLightBtn.style.backgroundColor = '';
       yellowLightBtn.style.backgroundColor = '';
     }

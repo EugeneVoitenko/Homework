@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="http://localhost:35729/livereload.js"></script>
+  <title key='title'>Simple traffic light</title>
+<link href="lesson_9.css" rel="stylesheet"></head>
+
+<body>
+  <div style="text-align: center; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: grey;">
+    <div style="display: inline-block; text-align: center;">
+      <h1 style="font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: grey">Simple traffic light</h1>
+      <h4 style="font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: lightgrey">ver: 1.04</h4>
+      <br>
+      <button
+        style="width: 100px; height: 100px; background-color: red; color: grey; outline: none; border-radius: 50%;"
+        onclick="toggleColorRed()" id="btnRed">RED</button><br>
+      <button style="width: 100px; height: 100px; color: grey; outline: none; border-radius: 50%;"
+        onclick="toggleColorYellow()" id="btnYellow">YELLOW</button><br>
+      <button style="width: 100px; height: 100px; color: grey; outline: none; border-radius: 50%;"
+        onclick="toggleColorGreen()" id="btnGreen">GREEN</button><br>
+    </div>
+  </div>
+  <script>
+    const redLightBtn = document.querySelector('#btnRed');
+    const yellowLightBtn = document.querySelector('#btnYellow');
+    const greenLightBtn = document.querySelector('#btnGreen');
+    function toggleColorRed() {
+      redLightBtn.style.backgroundColor = 'red';
+      yellowLightBtn.style.backgroundColor = '';
+      greenLightBtn.style.backgroundColor = '';
+    }
+    function toggleColorYellow() {
+      yellowLightBtn.style.backgroundColor = 'yellow';
+      redLightBtn.style.backgroundColor = '';
+      greenLightBtn.style.backgroundColor = '';
+    }
+    function toggleColorGreen() {
+      greenLightBtn.style.backgroundColor = 'green'
+      redLightBtn.style.backgroundColor = '';
+      yellowLightBtn.style.backgroundColor = '';
+    }
+  </script>
+<script type="text/javascript" src="lesson_9.js"></script></body>
+
+</html>

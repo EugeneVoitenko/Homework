@@ -86,17 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/lesson_9/lesson_9.css":
-/*!***********************************!*\
-  !*** ./src/lesson_9/lesson_9.css ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-
-/***/ }),
-
 /***/ "./src/lesson_9/lesson_9.js":
 /*!**********************************!*\
   !*** ./src/lesson_9/lesson_9.js ***!
@@ -106,9 +95,20 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _lesson_9_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lesson_9.css */ "./src/lesson_9/lesson_9.css");
-/* harmony import */ var _lesson_9_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_lesson_9_css__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _lesson_9_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lesson_9.scss */ "./src/lesson_9/lesson_9.scss");
+/* harmony import */ var _lesson_9_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_lesson_9_scss__WEBPACK_IMPORTED_MODULE_0__);
 
+
+/***/ }),
+
+/***/ "./src/lesson_9/lesson_9.scss":
+/*!************************************!*\
+  !*** ./src/lesson_9/lesson_9.scss ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
 
 /***/ }),
 

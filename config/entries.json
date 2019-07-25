@@ -16,5 +16,17 @@
   ],
   "playground_9": [
     "./src/playground_9/playground_9.js"
+  ],
+  "playground_9-1": [
+    "./src/playground_9-1/playground_9-1.js"
+  ],
+  "playground_9-2": [
+    "./src/playground_9-2/playground_9-2.js"
+  ],
+  "playground_9-3": [
+    "./src/playground_9-3/playground_9-3.js"
+  ],
+  "playground_9-4": [
+    "./src/playground_9-4/playground_9-4.js"
   ]
 }

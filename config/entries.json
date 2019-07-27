@@ -28,5 +28,20 @@
   ],
   "playground_9-4": [
     "./src/playground_9-4/playground_9-4.js"
+  ],
+  "playground_9-5": [
+    "./src/playground_9-5/playground_9-5.js"
+  ],
+  "playground_9-6": [
+    "./src/playground_9-6/playground_9-6.js"
+  ],
+  "playground_9-7": [
+    "./src/playground_9-7/playground_9-7.js"
+  ],
+  "playground_9-10": [
+    "./src/playground_9-10/playground_9-10.js"
+  ],
+  "lesson_10": [
+    "./src/lesson_10/lesson_10.js"
   ]
 }

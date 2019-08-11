@@ -81,66 +81,34 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 14);
+/******/ 	return __webpack_require__(__webpack_require__.s = 16);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/lesson_10/lesson_10.js":
+/***/ "./src/lesson_11/lesson_11.js":
 /*!************************************!*\
-  !*** ./src/lesson_10/lesson_10.js ***!
+  !*** ./src/lesson_11/lesson_11.js ***!
   \************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _lesson_10_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lesson_10.scss */ "./src/lesson_10/lesson_10.scss");
-/* harmony import */ var _lesson_10_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_lesson_10_scss__WEBPACK_IMPORTED_MODULE_0__);
- // function checkAge(age) {
-//     return (age > 18) ? true : confirm('Родители разрешили?');
-//   }
-// function checkAge(age) {
-//   return (age > 18) || confirm('Родители разрешили?');
-// }
-// function findMin(array) {
-//   let minNumber = array[0];
-//   for (let i = 1; i < array.length; i++) {
-//     if (array[i] < minNumber) {
-//       minNumber = array[i];
-//     }
-//   }
-//   return minNumber;
-// }
-// console.log(findMin([8, 4, 9, 2, 1]));
-// function min(a, b) {
-//   if (a < b) {
-//     return a;
-//   } else {
-//     return b; 
-//   }
-// }
-// console.log(min(2, 5));
-// console.log(min(3, -1));
-// console.log(min(1, 1));
-// function min(a, b) {
-//   return (a < b) ? a : b; 
-// }
-// console.log(min(2, 5));
-// console.log(min(3, -1));
-// console.log(min(1, 1));
+/* harmony import */ var _lesson_11_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lesson_11.scss */ "./src/lesson_11/lesson_11.scss");
+/* harmony import */ var _lesson_11_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_lesson_11_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _scripts_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scripts/button */ "./src/lesson_11/scripts/button.js");
+/* harmony import */ var _scripts_paragraph__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./scripts/paragraph */ "./src/lesson_11/scripts/paragraph.js");
 
-function sayHi() {
-  alert("Привет");
-}
 
-sayHi(); // выведет код функции
+
+var btn1 = new _scripts_button__WEBPACK_IMPORTED_MODULE_1__["Button"]('Добавить параграф', _scripts_paragraph__WEBPACK_IMPORTED_MODULE_2__["Paragraph"]);
 
 /***/ }),
 
-/***/ "./src/lesson_10/lesson_10.scss":
+/***/ "./src/lesson_11/lesson_11.scss":
 /*!**************************************!*\
-  !*** ./src/lesson_10/lesson_10.scss ***!
+  !*** ./src/lesson_11/lesson_11.scss ***!
   \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -149,17 +117,68 @@ sayHi(); // выведет код функции
 
 /***/ }),
 
-/***/ 14:
+/***/ "./src/lesson_11/scripts/button.js":
+/*!*****************************************!*\
+  !*** ./src/lesson_11/scripts/button.js ***!
+  \*****************************************/
+/*! exports provided: Button */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Button", function() { return Button; });
+function Button(text, clickHandler) {
+  this.target = document.querySelector('.content');
+  this.btn = document.createElement('button');
+  this.btn.className = 'btn';
+  this.btn.textContent = text;
+  this.btn.onclick = clickHandler;
+  this.target.append(this.btn);
+}
+
+
+
+/***/ }),
+
+/***/ "./src/lesson_11/scripts/paragraph.js":
+/*!********************************************!*\
+  !*** ./src/lesson_11/scripts/paragraph.js ***!
+  \********************************************/
+/*! exports provided: Paragraph */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Paragraph", function() { return Paragraph; });
+function Paragraph() {
+  var paragraphText = prompt('Введите текст параграфа');
+
+  while (paragraphText == '') {
+    paragraphText = prompt('Необходимо ввести текст');
+  }
+
+  this.target = document.querySelector('.content');
+  this.parag = document.createElement('div');
+  this.parag.className = 'paragraph';
+  this.parag.innerHTML = paragraphText;
+  this.target.append(this.parag);
+}
+
+
+
+/***/ }),
+
+/***/ 16:
 /*!******************************************!*\
-  !*** multi ./src/lesson_10/lesson_10.js ***!
+  !*** multi ./src/lesson_11/lesson_11.js ***!
   \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! ./src/lesson_10/lesson_10.js */"./src/lesson_10/lesson_10.js");
+module.exports = __webpack_require__(/*! ./src/lesson_11/lesson_11.js */"./src/lesson_11/lesson_11.js");
 
 
 /***/ })
 
 /******/ });
-//# sourceMappingURL=lesson_10.js.map
+//# sourceMappingURL=lesson_11.js.map

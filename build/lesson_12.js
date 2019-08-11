@@ -81,85 +81,86 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 14);
+/******/ 	return __webpack_require__(__webpack_require__.s = 15);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/lesson_10/lesson_10.js":
+/***/ "./src/lesson_12/lesson_12.js":
 /*!************************************!*\
-  !*** ./src/lesson_10/lesson_10.js ***!
+  !*** ./src/lesson_12/lesson_12.js ***!
   \************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _lesson_10_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lesson_10.scss */ "./src/lesson_10/lesson_10.scss");
-/* harmony import */ var _lesson_10_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_lesson_10_scss__WEBPACK_IMPORTED_MODULE_0__);
- // function checkAge(age) {
-//     return (age > 18) ? true : confirm('Родители разрешили?');
-//   }
-// function checkAge(age) {
-//   return (age > 18) || confirm('Родители разрешили?');
-// }
-// function findMin(array) {
-//   let minNumber = array[0];
-//   for (let i = 1; i < array.length; i++) {
-//     if (array[i] < minNumber) {
-//       minNumber = array[i];
-//     }
-//   }
-//   return minNumber;
-// }
-// console.log(findMin([8, 4, 9, 2, 1]));
-// function min(a, b) {
-//   if (a < b) {
-//     return a;
-//   } else {
-//     return b; 
-//   }
-// }
-// console.log(min(2, 5));
-// console.log(min(3, -1));
-// console.log(min(1, 1));
-// function min(a, b) {
-//   return (a < b) ? a : b; 
-// }
-// console.log(min(2, 5));
-// console.log(min(3, -1));
-// console.log(min(1, 1));
-
-function sayHi() {
-  alert("Привет");
-}
-
-sayHi(); // выведет код функции
-
-/***/ }),
-
-/***/ "./src/lesson_10/lesson_10.scss":
-/*!**************************************!*\
-  !*** ./src/lesson_10/lesson_10.scss ***!
-  \**************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-// extracted by mini-css-extract-plugin
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+var Clock =
+/*#__PURE__*/
+function () {
+  function Clock(_ref) {
+    var template = _ref.template;
+
+    _classCallCheck(this, Clock);
+
+    this.template = template;
+  }
+
+  _createClass(Clock, [{
+    key: "render",
+    value: function render() {
+      var date = new Date();
+      var hours = date.getHours();
+      if (hours < 10) hours = '0' + hours;
+      var mins = date.getMinutes();
+      if (mins < 10) mins = '0' + mins;
+      var secs = date.getSeconds();
+      if (secs < 10) secs = '0' + secs;
+      var output = this.template.replace('h', hours).replace('m', mins).replace('s', secs);
+      console.log(output);
+    }
+  }, {
+    key: "stop",
+    value: function stop() {
+      clearInterval(this.timer);
+    }
+  }, {
+    key: "start",
+    value: function start() {
+      var _this = this;
+
+      this.render();
+      this.timer = setInterval(function () {
+        return _this.render();
+      }, 1000);
+    }
+  }]);
+
+  return Clock;
+}();
+
+var clock = new Clock({
+  template: 'h:m:s'
+});
+clock.start();
 
 /***/ }),
 
-/***/ 14:
+/***/ 15:
 /*!******************************************!*\
-  !*** multi ./src/lesson_10/lesson_10.js ***!
+  !*** multi ./src/lesson_12/lesson_12.js ***!
   \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! ./src/lesson_10/lesson_10.js */"./src/lesson_10/lesson_10.js");
+module.exports = __webpack_require__(/*! ./src/lesson_12/lesson_12.js */"./src/lesson_12/lesson_12.js");
 
 
 /***/ })
 
 /******/ });
-//# sourceMappingURL=lesson_10.js.map
+//# sourceMappingURL=lesson_12.js.map

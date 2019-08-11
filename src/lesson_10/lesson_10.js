@@ -39,8 +39,7 @@ import './lesson_10.scss';
 // console.log(min(1, 1));
 
 function sayHi() {
-    alert( "Привет" );
-  }
-  
-  alert( sayHi ); // выведет код функции
+  alert( "Привет" );
+}
 
+sayHi(); // выведет код функции

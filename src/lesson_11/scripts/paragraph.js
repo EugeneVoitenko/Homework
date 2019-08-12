@@ -1,8 +1,13 @@
-function Paragraph () {
+function addParagraph() {
+
   let paragraphText = prompt('Введите текст параграфа');
-  while (paragraphText == '') {
-    paragraphText = prompt('Необходимо ввести текст');
+  while (paragraphText === '') {
+    paragraphText = prompt('Введите текст параграфа');
   }
+  if (paragraphText === null) {
+    return;
+  }
+
   this.target = document.querySelector('.content');
   this.parag = document.createElement('div');
   this.parag.className = 'paragraph';
@@ -10,4 +15,4 @@ function Paragraph () {
   this.target.append(this.parag);
 }
 
-export { Paragraph };
+export { addParagraph };

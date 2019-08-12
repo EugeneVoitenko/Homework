@@ -3,7 +3,7 @@ function Button(text, clickHandler) {
   this.btn = document.createElement('button');
   this.btn.className = 'btn';
   this.btn.textContent = text;
-  this.btn.onclick = clickHandler; 
+  this.btn.onclick = clickHandler;
   this.target.append(this.btn);
 }
 

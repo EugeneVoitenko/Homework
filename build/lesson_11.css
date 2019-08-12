@@ -36,8 +36,8 @@ h1 {
 .paragraph {
   width: 70%;
   padding: 10px;
-  border: 1px solid lightgrey;
   border-radius: 4px;
+  font-family: "SF Pro display", Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
   margin: 0 auto;
   margin-top: 10px;

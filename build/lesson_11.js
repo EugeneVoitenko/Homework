@@ -102,7 +102,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var btn1 = new _scripts_button__WEBPACK_IMPORTED_MODULE_1__["Button"]('Добавить параграф', _scripts_paragraph__WEBPACK_IMPORTED_MODULE_2__["Paragraph"]);
+var btn1 = new _scripts_button__WEBPACK_IMPORTED_MODULE_1__["Button"]('Добавить параграф', _scripts_paragraph__WEBPACK_IMPORTED_MODULE_2__["addParagraph"]);
 
 /***/ }),
 
@@ -144,17 +144,21 @@ function Button(text, clickHandler) {
 /*!********************************************!*\
   !*** ./src/lesson_11/scripts/paragraph.js ***!
   \********************************************/
-/*! exports provided: Paragraph */
+/*! exports provided: addParagraph */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Paragraph", function() { return Paragraph; });
-function Paragraph() {
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "addParagraph", function() { return addParagraph; });
+function addParagraph() {
   var paragraphText = prompt('Введите текст параграфа');
 
-  while (paragraphText == '') {
-    paragraphText = prompt('Необходимо ввести текст');
+  while (paragraphText === '') {
+    paragraphText = prompt('Введите текст параграфа');
+  }
+
+  if (paragraphText === null) {
+    return;
   }
 
   this.target = document.querySelector('.content');

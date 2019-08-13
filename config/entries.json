@@ -46,5 +46,8 @@
   ],
   "lesson_11": [
     "./src/lesson_11/lesson_11.js"
+  ],
+  "playground_11": [
+    "./src/playground_11/playground_11.js"
   ]
 }

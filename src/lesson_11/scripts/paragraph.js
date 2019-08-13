@@ -1,4 +1,4 @@
-function addParagraph() {
+function Paragraph() {
 
   let paragraphText = prompt('Введите текст параграфа');
   while (paragraphText === '') {
@@ -15,4 +15,4 @@ function addParagraph() {
   this.target.append(this.parag);
 }
 
-export { addParagraph };
+export { Paragraph };

@@ -35,9 +35,9 @@ h1 {
   margin: 20px auto;
   padding: 1rem;
   outline: none;
+  transition: all 100ms;
 
   &:hover {
-    transition: 100ms;
     background-color: #0085f1;
   }
 }

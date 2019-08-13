@@ -81,35 +81,37 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 15);
+/******/ 	return __webpack_require__(__webpack_require__.s = 16);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/lesson_11/lesson_11.js":
-/*!************************************!*\
-  !*** ./src/lesson_11/lesson_11.js ***!
-  \************************************/
+/***/ "./src/playground_11/playground_11.js":
+/*!********************************************!*\
+  !*** ./src/playground_11/playground_11.js ***!
+  \********************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _lesson_11_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lesson_11.scss */ "./src/lesson_11/lesson_11.scss");
-/* harmony import */ var _lesson_11_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_lesson_11_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _scripts_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scripts/button */ "./src/lesson_11/scripts/button.js");
-/* harmony import */ var _scripts_paragraph__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./scripts/paragraph */ "./src/lesson_11/scripts/paragraph.js");
+/* harmony import */ var _playground_11_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./playground_11.scss */ "./src/playground_11/playground_11.scss");
+/* harmony import */ var _playground_11_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_playground_11_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _scripts_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scripts/button */ "./src/playground_11/scripts/button.js");
+/* harmony import */ var _scripts_paragraph__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./scripts/paragraph */ "./src/playground_11/scripts/paragraph.js");
+/* harmony import */ var _scripts_prompt_text__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./scripts/prompt_text */ "./src/playground_11/scripts/prompt_text.js");
 
 
 
-var btnAddParagraph = new _scripts_button__WEBPACK_IMPORTED_MODULE_1__["Button"]('Добавить параграф', _scripts_paragraph__WEBPACK_IMPORTED_MODULE_2__["Paragraph"]);
+
+var btnAddParagraph = new _scripts_button__WEBPACK_IMPORTED_MODULE_1__["Button"]('Добавить параграф', _scripts_paragraph__WEBPACK_IMPORTED_MODULE_2__["addParagraph"]);
 
 /***/ }),
 
-/***/ "./src/lesson_11/lesson_11.scss":
-/*!**************************************!*\
-  !*** ./src/lesson_11/lesson_11.scss ***!
-  \**************************************/
+/***/ "./src/playground_11/playground_11.scss":
+/*!**********************************************!*\
+  !*** ./src/playground_11/playground_11.scss ***!
+  \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -117,10 +119,10 @@ var btnAddParagraph = new _scripts_button__WEBPACK_IMPORTED_MODULE_1__["Button"]
 
 /***/ }),
 
-/***/ "./src/lesson_11/scripts/button.js":
-/*!*****************************************!*\
-  !*** ./src/lesson_11/scripts/button.js ***!
-  \*****************************************/
+/***/ "./src/playground_11/scripts/button.js":
+/*!*********************************************!*\
+  !*** ./src/playground_11/scripts/button.js ***!
+  \*********************************************/
 /*! exports provided: Button */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -140,27 +142,17 @@ function Button(text, clickHandler) {
 
 /***/ }),
 
-/***/ "./src/lesson_11/scripts/paragraph.js":
-/*!********************************************!*\
-  !*** ./src/lesson_11/scripts/paragraph.js ***!
-  \********************************************/
-/*! exports provided: Paragraph */
+/***/ "./src/playground_11/scripts/paragraph.js":
+/*!************************************************!*\
+  !*** ./src/playground_11/scripts/paragraph.js ***!
+  \************************************************/
+/*! exports provided: addParagraph */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Paragraph", function() { return Paragraph; });
-function Paragraph() {
-  var paragraphText = prompt('Введите текст параграфа');
-
-  while (paragraphText === '') {
-    paragraphText = prompt('Введите текст параграфа');
-  }
-
-  if (paragraphText === null) {
-    return;
-  }
-
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "addParagraph", function() { return addParagraph; });
+function addParagraph(paragraphText) {
   this.target = document.querySelector('.content');
   this.parag = document.createElement('div');
   this.parag.className = 'paragraph';
@@ -172,17 +164,45 @@ function Paragraph() {
 
 /***/ }),
 
-/***/ 15:
-/*!******************************************!*\
-  !*** multi ./src/lesson_11/lesson_11.js ***!
-  \******************************************/
+/***/ "./src/playground_11/scripts/prompt_text.js":
+/*!**************************************************!*\
+  !*** ./src/playground_11/scripts/prompt_text.js ***!
+  \**************************************************/
+/*! exports provided: promptText */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "promptText", function() { return promptText; });
+function promptText() {
+  var paragraphText = prompt('Введите текст параграфа');
+
+  while (paragraphText === '') {
+    paragraphText = prompt('Введите текст параграфа');
+  }
+
+  if (paragraphText === null) {
+    return;
+  }
+
+  return paragraphText;
+}
+
+
+
+/***/ }),
+
+/***/ 16:
+/*!**************************************************!*\
+  !*** multi ./src/playground_11/playground_11.js ***!
+  \**************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! ./src/lesson_11/lesson_11.js */"./src/lesson_11/lesson_11.js");
+module.exports = __webpack_require__(/*! ./src/playground_11/playground_11.js */"./src/playground_11/playground_11.js");
 
 
 /***/ })
 
 /******/ });
-//# sourceMappingURL=lesson_11.js.map
+//# sourceMappingURL=playground_11.js.map

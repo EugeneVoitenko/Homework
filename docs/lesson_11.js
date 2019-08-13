@@ -102,7 +102,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var btn1 = new _scripts_button__WEBPACK_IMPORTED_MODULE_1__["Button"]('Добавить параграф', _scripts_paragraph__WEBPACK_IMPORTED_MODULE_2__["addParagraph"]);
+var btnAddParagraph = new _scripts_button__WEBPACK_IMPORTED_MODULE_1__["Button"]('Добавить параграф', _scripts_paragraph__WEBPACK_IMPORTED_MODULE_2__["addParagraph"]);
 
 /***/ }),
 

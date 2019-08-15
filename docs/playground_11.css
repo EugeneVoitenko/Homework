@@ -28,9 +28,9 @@ h1 {
   font-size: 1.2rem;
   margin: 20px auto;
   padding: 1rem;
-  outline: none; }
+  outline: none;
+  transition: all 100ms; }
   .btn:hover {
-    transition: 100ms;
     background-color: #0085f1; }
 
 .paragraph {

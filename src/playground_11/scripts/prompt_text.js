@@ -1,12 +1,15 @@
+import { Paragraph } from "../../lesson_11/scripts/paragraph";
+
 function promptText() {
-    let paragraphText = prompt('Введите текст параграфа');
-    while (paragraphText === '') {
-        paragraphText = prompt('Введите текст параграфа');
+    let text = prompt('Введите текст параграфа');
+    while (text === '') {
+        text = prompt('Введите текст параграфа');
     }
-    if (paragraphText === null) {
+    if (text === null) {
         return;
     }
-    return paragraphText;
+    console.log(text);
+    Paragraph(text);
 }
 
 export { promptText };

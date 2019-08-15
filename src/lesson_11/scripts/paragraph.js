@@ -1,8 +1,8 @@
 function Paragraph() {
 
-  let paragraphText = prompt('Введите текст параграфа');
+  let paragraphText = prompt('Please enter paragraph text');
   while (paragraphText === '') {
-    paragraphText = prompt('Введите текст параграфа');
+    paragraphText = prompt('Please enter paragraph text');
   }
   if (paragraphText === null) {
     return;

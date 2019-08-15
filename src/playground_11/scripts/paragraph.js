@@ -1,4 +1,4 @@
-function addParagraph(paragraphText) {
+function Paragraph(paragraphText) {
 
   this.target = document.querySelector('.content');
   this.parag = document.createElement('div');
@@ -7,4 +7,4 @@ function addParagraph(paragraphText) {
   this.target.append(this.parag);
 }
 
-export { addParagraph };
+export { Paragraph };

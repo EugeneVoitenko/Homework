@@ -102,7 +102,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var btnAddParagraph = new _scripts_button__WEBPACK_IMPORTED_MODULE_1__["Button"]('Добавить параграф', _scripts_paragraph__WEBPACK_IMPORTED_MODULE_2__["Paragraph"]);
+var btnAddParagraph = new _scripts_button__WEBPACK_IMPORTED_MODULE_1__["Button"]('Add paragraph', _scripts_paragraph__WEBPACK_IMPORTED_MODULE_2__["Paragraph"]);
 
 /***/ }),
 
@@ -151,10 +151,10 @@ function Button(text, clickHandler) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Paragraph", function() { return Paragraph; });
 function Paragraph() {
-  var paragraphText = prompt('Введите текст параграфа');
+  var paragraphText = prompt('Please enter paragraph text');
 
   while (paragraphText === '') {
-    paragraphText = prompt('Введите текст параграфа');
+    paragraphText = prompt('Please enter paragraph text');
   }
 
   if (paragraphText === null) {

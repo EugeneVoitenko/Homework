@@ -49,5 +49,8 @@
   ],
   "playground_11": [
     "./src/playground_11/playground_11.js"
+  ],
+  "playground_11-2": [
+    "./src/playground_11-2/playground_11-2.js"
   ]
 }

@@ -1,3 +1,15 @@
+function promptText() {
+  let text = prompt('Введите текст параграфа');
+  while (text === '') {
+    text = prompt('Введите текст параграфа');
+  }
+  if (text === null) {
+    return text;
+  }
+  
+  Paragraph(text);
+}
+
 function Paragraph(paragraphText) {
 
   this.target = document.querySelector('.content');
@@ -7,4 +19,4 @@ function Paragraph(paragraphText) {
   this.target.append(this.parag);
 }
 
-export { Paragraph };
+export { promptText, Paragraph };

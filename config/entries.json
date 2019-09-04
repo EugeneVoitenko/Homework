@@ -52,5 +52,20 @@
   ],
   "playground_11-2": [
     "./src/playground_11-2/playground_11-2.js"
+  ],
+  "playground_10": [
+    "./src/playground_10/playground_10.js"
+  ],
+  "playground_10-2": [
+    "./src/playground_10-2/playground_10-2.js"
+  ],
+  "playground_10-3": [
+    "./src/playground_10-3/playground_10-3.js"
+  ],
+  "playground_9-11": [
+    "./src/playground_9-11/playground_9-11.js"
+  ],
+  "final_project_london": [
+    "./src/final_project_london/final_project_london.js"
   ]
 }

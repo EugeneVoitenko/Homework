@@ -81,36 +81,30 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 16);
+/******/ 	return __webpack_require__(__webpack_require__.s = 20);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/playground_11/playground_11.js":
-/*!********************************************!*\
-  !*** ./src/playground_11/playground_11.js ***!
-  \********************************************/
+/***/ "./src/playground_10-3/playground_10-3.js":
+/*!************************************************!*\
+  !*** ./src/playground_10-3/playground_10-3.js ***!
+  \************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _playground_11_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./playground_11.scss */ "./src/playground_11/playground_11.scss");
-/* harmony import */ var _playground_11_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_playground_11_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _scripts_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scripts/button */ "./src/playground_11/scripts/button.js");
-/* harmony import */ var _scripts_paragraph__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./scripts/paragraph */ "./src/playground_11/scripts/paragraph.js");
+/* harmony import */ var _playground_10_3_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./playground_10-3.scss */ "./src/playground_10-3/playground_10-3.scss");
+/* harmony import */ var _playground_10_3_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_playground_10_3_scss__WEBPACK_IMPORTED_MODULE_0__);
 
-
-
-
-var btnAddParagraph = new _scripts_button__WEBPACK_IMPORTED_MODULE_1__["Button"]('Добавить параграф', _scripts_paragraph__WEBPACK_IMPORTED_MODULE_2__["promptText"]);
 
 /***/ }),
 
-/***/ "./src/playground_11/playground_11.scss":
-/*!**********************************************!*\
-  !*** ./src/playground_11/playground_11.scss ***!
-  \**********************************************/
+/***/ "./src/playground_10-3/playground_10-3.scss":
+/*!**************************************************!*\
+  !*** ./src/playground_10-3/playground_10-3.scss ***!
+  \**************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -118,75 +112,17 @@ var btnAddParagraph = new _scripts_button__WEBPACK_IMPORTED_MODULE_1__["Button"]
 
 /***/ }),
 
-/***/ "./src/playground_11/scripts/button.js":
-/*!*********************************************!*\
-  !*** ./src/playground_11/scripts/button.js ***!
-  \*********************************************/
-/*! exports provided: Button */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Button", function() { return Button; });
-function Button(text, clickHandler) {
-  this.target = document.querySelector(".content");
-  this.btn = document.createElement("button");
-  this.btn.className = "btn";
-  this.btn.textContent = text;
-  this.btn.onclick = clickHandler;
-  this.target.append(this.btn);
-}
-
-
-
-/***/ }),
-
-/***/ "./src/playground_11/scripts/paragraph.js":
-/*!************************************************!*\
-  !*** ./src/playground_11/scripts/paragraph.js ***!
-  \************************************************/
-/*! exports provided: promptText, Paragraph */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "promptText", function() { return promptText; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Paragraph", function() { return Paragraph; });
-function promptText() {
-  var text = prompt("Please enter paragraph text");
-
-  while (text === "") {
-    text = prompt("Please enter paragraph text");
-  }
-
-  if (text === null) {
-    return;
-  }
-}
-
-function Paragraph(paragraphText) {
-  this.target = document.querySelector(".content");
-  this.parag = document.createElement("div");
-  this.parag.className = "paragraph";
-  this.parag.innerHTML = paragraphText;
-  this.target.append(this.parag);
-}
-
-
-
-/***/ }),
-
-/***/ 16:
-/*!**************************************************!*\
-  !*** multi ./src/playground_11/playground_11.js ***!
-  \**************************************************/
+/***/ 20:
+/*!******************************************************!*\
+  !*** multi ./src/playground_10-3/playground_10-3.js ***!
+  \******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! ./src/playground_11/playground_11.js */"./src/playground_11/playground_11.js");
+module.exports = __webpack_require__(/*! ./src/playground_10-3/playground_10-3.js */"./src/playground_10-3/playground_10-3.js");
 
 
 /***/ })
 
 /******/ });
-//# sourceMappingURL=playground_11.js.map
+//# sourceMappingURL=playground_10-3.js.map

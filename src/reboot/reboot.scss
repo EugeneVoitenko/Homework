@@ -2,33 +2,35 @@
 
 .content {
     min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid red; */
+    padding: 20px;
+    border: 1px solid red;
   }
 
   .header {
     font-family: $font-family-base;
-    font-size: 50px;
+    font-size: 2.6666rem;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 60px;
-    /* border: 1px solid orange; */
+    margin-bottom: 30px;
+    border: 1px solid orange;
   }
 
   .header-text {
     font-family: $font-family-base;
-    font-size: 20px;
+    font-size: 1.3333rem;
     font-weight: 300;
     text-align: center;
     color: darkgray;
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
   }
 
   .form-wrapper {
-    margin-top: 120px;
+    margin-top: 50px;
   }
 
   .button {
@@ -37,7 +39,7 @@
     border: none;
     padding: 20px 50px;
     font-family: $font-family-base;
-    font-size: 30px;
+    font-size: 2rem;
     text-align: center;
     border-radius: 40px;
   }

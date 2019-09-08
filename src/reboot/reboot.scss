@@ -1,0 +1,52 @@
+@import './styles/base.scss';
+
+.content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+  }
+
+  .header {
+    // font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial , sans-serif;
+    font-family: Lato;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 60px;
+    /* border: 1px solid orange; */
+  }
+
+  .header-text {
+    // font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial , sans-serif;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    color: darkgray;
+    /* border: 1px solid blue; */
+  }
+
+  .form-wrapper {
+    margin-top: 120px;
+  }
+
+  .button {
+    background-color: rgb(255, 59, 48);
+    color: #ffffff;
+    border: none;
+    padding: 20px 50px;
+    // font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial , sans-serif;
+    font-family: Lato;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 40px;
+    /* -moz-border-radius: 10px;
+        -webkit-border-radius: 10px; */
+  }
+
+  .button:hover {
+    background-color: #0085f1;
+  }

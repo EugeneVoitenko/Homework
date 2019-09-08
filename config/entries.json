@@ -67,5 +67,8 @@
   ],
   "final_project_london": [
     "./src/final_project_london/final_project_london.js"
+  ],
+  "reboot": [
+    "./src/reboot/reboot.js"
   ]
 }

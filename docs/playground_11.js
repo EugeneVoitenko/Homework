@@ -86,38 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/lesson_11/scripts/paragraph.js":
-/*!********************************************!*\
-  !*** ./src/lesson_11/scripts/paragraph.js ***!
-  \********************************************/
-/*! exports provided: Paragraph */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Paragraph", function() { return Paragraph; });
-function Paragraph() {
-  var paragraphText = prompt('Please enter paragraph text');
-
-  while (paragraphText === '') {
-    paragraphText = prompt('Please enter paragraph text');
-  }
-
-  if (paragraphText === null) {
-    return;
-  }
-
-  this.target = document.querySelector('.content');
-  this.parag = document.createElement('div');
-  this.parag.className = 'paragraph';
-  this.parag.innerHTML = paragraphText;
-  this.target.append(this.parag);
-}
-
-
-
-/***/ }),
-
 /***/ "./src/playground_11/playground_11.js":
 /*!********************************************!*\
   !*** ./src/playground_11/playground_11.js ***!
@@ -130,11 +98,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _playground_11_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./playground_11.scss */ "./src/playground_11/playground_11.scss");
 /* harmony import */ var _playground_11_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_playground_11_scss__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _scripts_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scripts/button */ "./src/playground_11/scripts/button.js");
-/* harmony import */ var _scripts_prompt_text__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./scripts/prompt_text */ "./src/playground_11/scripts/prompt_text.js");
+/* harmony import */ var _scripts_paragraph__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./scripts/paragraph */ "./src/playground_11/scripts/paragraph.js");
 
 
 
-var btnAddParagraph = new _scripts_button__WEBPACK_IMPORTED_MODULE_1__["Button"]('Добавить параграф', _scripts_prompt_text__WEBPACK_IMPORTED_MODULE_2__["promptText"]);
+
+var btnAddParagraph = new _scripts_button__WEBPACK_IMPORTED_MODULE_1__["Button"]('Добавить параграф', _scripts_paragraph__WEBPACK_IMPORTED_MODULE_2__["promptText"]);
 
 /***/ }),
 
@@ -160,9 +129,9 @@ var btnAddParagraph = new _scripts_button__WEBPACK_IMPORTED_MODULE_1__["Button"]
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Button", function() { return Button; });
 function Button(text, clickHandler) {
-  this.target = document.querySelector('.content');
-  this.btn = document.createElement('button');
-  this.btn.className = 'btn';
+  this.target = document.querySelector(".content");
+  this.btn = document.createElement("button");
+  this.btn.className = "btn";
   this.btn.textContent = text;
   this.btn.onclick = clickHandler;
   this.target.append(this.btn);
@@ -172,32 +141,35 @@ function Button(text, clickHandler) {
 
 /***/ }),
 
-/***/ "./src/playground_11/scripts/prompt_text.js":
-/*!**************************************************!*\
-  !*** ./src/playground_11/scripts/prompt_text.js ***!
-  \**************************************************/
-/*! exports provided: promptText */
+/***/ "./src/playground_11/scripts/paragraph.js":
+/*!************************************************!*\
+  !*** ./src/playground_11/scripts/paragraph.js ***!
+  \************************************************/
+/*! exports provided: promptText, Paragraph */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "promptText", function() { return promptText; });
-/* harmony import */ var _lesson_11_scripts_paragraph__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../lesson_11/scripts/paragraph */ "./src/lesson_11/scripts/paragraph.js");
-
-
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Paragraph", function() { return Paragraph; });
 function promptText() {
-  var text = prompt('Введите текст параграфа');
+  var text = prompt("Please enter paragraph text");
 
-  while (text === '') {
-    text = prompt('Введите текст параграфа');
+  while (text === "") {
+    text = prompt("Please enter paragraph text");
   }
 
   if (text === null) {
     return;
   }
+}
 
-  console.log(text);
-  Object(_lesson_11_scripts_paragraph__WEBPACK_IMPORTED_MODULE_0__["Paragraph"])(text);
+function Paragraph(paragraphText) {
+  this.target = document.querySelector(".content");
+  this.parag = document.createElement("div");
+  this.parag.className = "paragraph";
+  this.parag.innerHTML = paragraphText;
+  this.target.append(this.parag);
 }
 
 

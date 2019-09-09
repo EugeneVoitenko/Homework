@@ -1,7 +1,7 @@
 @import './styles/base.scss';
 
 .reboot-icon {
-  height: 100px;
+  height: 80px;
 }
 .content {
     min-height: 100vh;
@@ -16,7 +16,7 @@
 
   .header {
     font-family: $font-family-base;
-    font-size: 2.6666rem;
+    font-size: 2.1333rem;
     font-weight: 700;
     text-align: center;
     margin-bottom: 30px;
@@ -27,6 +27,7 @@
     font-family: $font-family-base;
     font-size: 1rem;
     font-weight: 300;
+    line-height: 1.6;
     text-align: center;
     color: darkgray;
     // border: 1px solid blue;
@@ -40,13 +41,15 @@
     background-color: rgb(255, 59, 48);
     color: #ffffff;
     border: none;
-    padding: 20px 50px;
+    padding: 13px 35px;
     font-family: $font-family-base;
-    font-size: 2rem;
+    font-size: 1.1333rem;
+    // font-weight: 600;
+    // letter-spacing: 0.05em;
     text-align: center;
     border-radius: 40px;
   }
 
   .button:hover {
-    background-color: #0085f1;
+    background-color: #bf221f;
   }

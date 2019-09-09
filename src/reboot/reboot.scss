@@ -1,14 +1,17 @@
 @import './styles/base.scss';
 
+.reboot-icon {
+  height: 100px;
+}
 .content {
     min-height: 100vh;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:space-around;
     align-items: center;
     padding: 20px;
-    border: 1px solid red;
+    // border: 1px solid red;
   }
 
   .header {
@@ -17,20 +20,20 @@
     font-weight: 700;
     text-align: center;
     margin-bottom: 30px;
-    border: 1px solid orange;
+    // border: 1px solid orange;
   }
 
-  .header-text {
+  .note-text {
     font-family: $font-family-base;
-    font-size: 1.3333rem;
+    font-size: 1rem;
     font-weight: 300;
     text-align: center;
     color: darkgray;
-    border: 1px solid blue;
+    // border: 1px solid blue;
   }
 
   .form-wrapper {
-    margin-top: 50px;
+    margin-bottom: 30px;
   }
 
   .button {

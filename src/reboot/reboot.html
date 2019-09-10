@@ -9,27 +9,53 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="http://localhost:35729/livereload.js"></script>
     <title key="title">Перезагрузка сервера трансляций</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../assets/favicons/reboot/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../assets/favicons/reboot/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../assets/favicons/reboot/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../../assets/favicons/reboot/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="../../assets/favicons/reboot/safari-pinned-tab.svg"
+      color="#ff3b30"
+    />
+    <link rel="shortcut icon" href="../../assets/favicons/reboot/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-config"
+      content="../../assets/favicons/reboot/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
     <div class="content">
       <img
-        class="reboot-icon"
+        class="header-icon"
         src="../../assets/images/reboot/reboot-icon.png"
-        alt="Reboot Icon"
+        alt="Reboot icon"
       />
       <h1 class="header">Перезагрузка сервера трансляций</h1>
-      <div class="form-wrapper">
-        <form method="get" action="/nginx-reboot">
-          <button type="submit" class="button">Перезагрузить</button>
-        </form>
-      </div>
+      <form method="get" action="/nginx-reboot">
+        <button type="submit" class="button">Перезагрузить</button>
+      </form>
       <p class="note-text">
-        Если все зрители или большинство испытывают проблемы с просмотром,
-        попробуйте перезагрузить сервер. Перезагрузка занимает 30-60 сек.<br />Во
-        время перезагрузки все зрители будут отключены от трансляции.<br />После
-        завершения перезагрузки и возобновления трансляции, они смогут
-        подключиться к серверу снова и продолжить просмотр.
+        Если у большинства зрителей есть проблемы с просмотром, попробуйте
+        перезагрузить сервер.
       </p>
+      <a class="link" href="#">Посмотреть статистику</a>
     </div>
   </body>
 </html>

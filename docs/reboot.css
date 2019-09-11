@@ -2,7 +2,7 @@
   box-sizing: border-box; }
 
 html {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Arial", sans-serif;
   font-size: 15px; }
 
 body {
@@ -30,28 +30,32 @@ h4 {
   margin: 0;
   padding: 0; }
 
-.header-icon {
-  height: 80px;
-  margin-bottom: 20px; }
-
 .content {
-  height: 100vh;
+  display: flex;
+  justify-content: center; }
+
+.container {
+  min-height: 100vh;
+  max-width: 1140px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 40px 30px; }
 
+.header-icon {
+  height: 80px;
+  margin-bottom: 20px; }
+
 .header {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-size: 2.1333rem;
-  font-weight: 700;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1.0625;
   text-align: center;
   color: #333333;
   margin: 20px 0px 20px; }
 
 .note-text {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.6;
@@ -63,12 +67,11 @@ h4 {
   background-color: #ff3b30;
   color: #ffffff;
   border: none;
-  padding: 13px 35px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-size: 1.1333rem;
   text-align: center;
   border-radius: 40px;
-  margin: 20px 0; }
+  margin: 20px 0;
+  padding: 13px 35px;
+  font-size: 24px; }
   .button:hover {
     background-color: #bf221f;
     transition: background-color 150ms; }
@@ -81,6 +84,17 @@ h4 {
     position: absolute; }
   .link:hover {
     text-decoration: underline; }
+
+@media (max-width: 575px) {
+  .container {
+    max-width: 540px; }
+  .header {
+    font-size: 32px;
+    line-height: 1.125; }
+  .button {
+    margin: 20px 0;
+    padding: 13px 35px;
+    font-size: 1.1333rem; } }
 
 
 /*# sourceMappingURL=reboot.css.map*/

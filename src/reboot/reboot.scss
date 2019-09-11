@@ -1,29 +1,38 @@
 @import './styles/base.scss';
+@import './styles/mixins.scss';
 
-.header-icon {
-  height: 80px;
-  margin-bottom: 20px;
-}
 .content {
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  // border: 1px solid red;
+}
+
+.container {
+  min-height: 100vh;
+  max-width: 1140px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 40px 30px;
+  // border: 1px solid blue;
+}
+
+.header-icon {
+  height: 80px;
+  margin-bottom: 20px;
 }
 
 .header {
-  font-family: $font-family-base;
-  font-size: 2.1333rem;
-  font-weight: 700;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1.0625;
   text-align: center;
   color: #333333;
   margin: 20px 0px 20px;
 }
 
 .note-text {
-  font-family: $font-family-base;
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.6;
@@ -36,12 +45,11 @@
   background-color: rgb(255, 59, 48);
   color: #ffffff;
   border: none;
-  padding: 13px 35px;
-  font-family: $font-family-base;
-  font-size: 1.1333rem;
   text-align: center;
   border-radius: 40px;
   margin: 20px 0;
+  padding: 13px 35px;
+  font-size: 24px;
 
   &:hover {
     background-color: #bf221f;
@@ -60,5 +68,22 @@
 
   &:hover {
     text-decoration: underline;
+  }
+}
+
+@include mobile {
+  .container {
+    max-width: 540px;
+  }
+
+  .header {
+    font-size: 32px;
+    line-height: 1.125;
+  }
+
+  .button {
+    margin: 20px 0;
+    padding: 13px 35px;
+    font-size: 1.1333rem;
   }
 }

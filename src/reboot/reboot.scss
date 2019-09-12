@@ -2,25 +2,26 @@
 @import './styles/mixins.scss';
 
 .content {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
+  padding: 100px 20px;
   // border: 1px solid red;
 }
 
 .container {
-  min-height: 100vh;
   max-width: 1140px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 30px;
   // border: 1px solid blue;
 }
 
 .header-icon {
   height: 80px;
   margin-bottom: 20px;
+  // border: 1px solid orange;
 }
 
 .header {
@@ -29,7 +30,8 @@
   line-height: 1.0625;
   text-align: center;
   color: #333333;
-  margin: 20px 0px 20px;
+  margin: 20px 0px;
+  // border: 1px solid brown;
 }
 
 .note-text {
@@ -47,7 +49,7 @@
   border: none;
   text-align: center;
   border-radius: 40px;
-  margin: 20px 0;
+  margin: 30px 0;
   padding: 13px 35px;
   font-size: 24px;
 
@@ -59,6 +61,7 @@
 
 .link {
   color: $link-color-base;
+  margin-top: 20px;
 
   &:after {
     content: '>';
@@ -72,17 +75,21 @@
 }
 
 @include mobile {
+  .content {
+    padding: 120px 20px;
+  }
+
   .container {
     max-width: 540px;
   }
 
   .header {
-    font-size: 32px;
+    font-size: 26px;
     line-height: 1.125;
   }
 
   .button {
-    margin: 20px 0;
+    margin: 30px 0;
     padding: 13px 35px;
     font-size: 1.1333rem;
   }

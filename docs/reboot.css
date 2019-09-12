@@ -71,7 +71,7 @@ h4 {
   border-radius: 40px;
   margin: 30px 0;
   padding: 13px 35px;
-  font-size: 24px; }
+  font-size: 28px; }
   .button:hover {
     background-color: #bf221f;
     transition: background-color 150ms; }
@@ -86,18 +86,22 @@ h4 {
   .link:hover {
     text-decoration: underline; }
 
+@media (max-width: 991px) {
+  .header {
+    font-size: 52px; }
+  .button {
+    font-size: 24px; } }
+
 @media (max-width: 575px) {
   .content {
-    padding: 120px 20px; }
-  .container {
-    max-width: 540px; }
+    padding: 100px 20px; }
   .header {
     font-size: 26px;
     line-height: 1.125; }
   .button {
     margin: 30px 0;
     padding: 13px 35px;
-    font-size: 1.1333rem; } }
+    font-size: 17px; } }
 
 
 /*# sourceMappingURL=reboot.css.map*/

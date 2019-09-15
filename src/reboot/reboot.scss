@@ -5,7 +5,7 @@
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  padding: 100px 20px;
+  padding: 150px 20px;
 }
 
 .container {
@@ -24,7 +24,7 @@
 .header {
   font-size: 64px;
   font-weight: 600;
-  line-height: 1.0625;
+  line-height: 1;
   text-align: center;
   color: #333333;
   margin: 20px 0px;
@@ -39,19 +39,20 @@
   margin: 20px 0;
 }
 
-.button {
+.reboot-button {
   background-color: rgb(255, 59, 48);
   color: #ffffff;
   border: none;
   text-align: center;
   border-radius: 40px;
-  margin: 30px 0;
+  margin: 20px 0 30px;
   padding: 13px 35px;
   font-size: 28px;
+  letter-spacing: 0.025em;
 
   &:hover {
-    background-color: #bf221f;
-    transition: background-color 150ms;
+    background-color: #0070c9;
+    transition: all 250ms;
   }
 }
 
@@ -71,28 +72,36 @@
 }
 
 @include tablet {
+  .content {
+    padding: 100px 20px;
+  }
+
   .header {
     font-size: 52px;
   }
 
-  .button {
+  .reboot-button {
     font-size: 24px;
   }
 }
 
 @include mobile {
   .content {
-    padding: 100px 20px;
+    padding: 80px 20px;
+  }
+
+  .header-icon {
+    height: 70px;
   }
 
   .header {
     font-size: 26px;
-    line-height: 1.125;
+    line-height: 1.1;
   }
 
-  .button {
-    margin: 30px 0;
+  .reboot-button {
     padding: 13px 35px;
     font-size: 17px;
+    margin: 15px 0 30px;
   }
 }

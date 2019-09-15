@@ -8,22 +8,21 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <script src="http://localhost:35729/livereload.js"></script>
   <title key="title">Перезагрузка сервера трансляций</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png" />
 </head>
 
 <body>
   <div class="content">
     <div class="container">
-      <img class="header-icon" src="./assets/images/reboot-icon.png" alt="Иконка перезагрузки" />
+      <img class="header-icon" src="../../assets/images/reboot/reboot-icon.png" alt="Иконка перезагрузки" />
       <h1 class="header">Перезагрузка сервера трансляций</h1>
-      <form method="get" action="/nginx-reboot">
-        <button type="submit" class="button">Перезагрузить</button>
-      </form>
       <p class="note-text">
         Если у большинства зрителей есть проблемы с просмотром, попробуйте
         перезагрузить сервер.
       </p>
-      <a class="link" href="#">Посмотреть статистику</a>
+      <form method="get" action="/nginx-reboot">
+        <button type="submit" class="reboot-button">Перезагрузить</button>
+      </form>
+      <a class="link" href="/stat">Посмотреть статистику</a>
     </div>
   </div>
 </body>

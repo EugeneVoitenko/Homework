@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'SF Pro display';
+    font-style : normal;
+    font-weight: 500;
+    src        : url(./assets/fonts/sf-pro-display_regular.woff2) format('woff2');
+}
+* {
+  box-sizing: border-box; }
+
+html {
+  font-family: "SF Pro display", Helvetica, Arial, sans-serif;
+  font-size: 15px; }
+
+body {
+  min-height: 100vh;
+  padding: 0;
+  margin: 0; }
+
+main {
+  display: block; }
+
+ul,
+ol {
+  padding: 0;
+  margin: 0; }
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0; }
+
+
+/*# sourceMappingURL=lesson_7.css.map*/

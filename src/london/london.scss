@@ -1,0 +1,178 @@
+@import './styles/base.scss';
+@import './fonts.css';
+
+.header {
+  height: 668px;
+  background-color: #c4e6f0;
+  background-image: url(../../assets/images/london/header.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header__wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.header__weather-widget {
+  display: flex;
+  position: absolute;
+  top: 33px;
+  left: 150px;
+}
+
+.weather-widget__icon {
+  height: 37px;
+  width: 38px;
+  margin-top: 6px;
+}
+
+.weather-details {
+  margin-left: 12px;
+  text-align: left;
+}
+
+.temperature {
+  font-family: ArialMT, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.48px;
+  color: #ffffff;
+  &::after {
+    content: '\00B0';
+  }
+}
+
+.wind {
+  font-family: ArialMT, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.48px;
+  color: #ffffff;
+
+  &::before {
+    content: 'wind:';
+    margin-right: 0.4em;
+  }
+
+  &::after {
+    content: 'mph';
+    margin-left: 0.3em;
+  }
+}
+
+.humidity {
+  font-family: ArialMT, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.48px;
+  color: #ffffff;
+
+  &::before {
+    content: 'humidity:';
+    margin-right: 0.4em;
+  }
+
+  &::after {
+    content: '%';
+    margin-left: 0.3em;
+  }
+}
+
+.main-menu__button {
+  width: 38px;
+  height: 38px;
+  background-color: transparent;
+  padding: 0;
+}
+
+.main-menu__line {
+  width: 100%;
+  height: 3px;
+  color: #ffffff;
+  background-color: #ffffff;
+  border: none;
+}
+
+.header__icon {
+  height: 45px;
+  width: 41px;
+  margin-top: 106px;
+}
+
+.line {
+  height: 1px;
+  border: none;
+}
+
+.header__line {
+  width: 155px;
+  color: #ffffff;
+  background-color: #ffffff;
+  position: relative;
+  bottom: 2px;
+}
+
+.header-text {
+  width: 100%;
+  font-size: 72px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -1.74px;
+  color: #ffffff;
+}
+
+.header__slogan {
+  width: 100%;
+  font-family: Hind-Light;
+  font-size: 36px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1em;
+  letter-spacing: -0.87px;
+  color: #ffffff;
+  margin-top: 0px;
+}
+
+.button {
+  font-family: Arial-BoldMT, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  text-align: center;
+}
+
+.pill-button {
+  border-radius: 100px;
+  background-color: #2387f5;
+  color: #ffffff;
+  border: none;
+  &:hover {
+    background-color: #0153aa;
+  }
+}
+
+.header__button {
+  padding: 17px 30px;
+  margin-top: 48px;
+}

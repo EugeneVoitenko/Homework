@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Hind-Light';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../../assets/fonts/london/Hind-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Arial-BoldMT';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../assets/fonts/london/ArialBoldMT.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ArialMT';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../assets/fonts/london/ArialMT.ttf') format('truetype');
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="http://localhost:35729/livereload.js"></script>
+  <title key='title'></title>
+<link href="playground_9-4.css" rel="stylesheet"></head>
+
+<body>
+  <h1>Hello from playground_9-4: Function</h1>
+  <button onclick="hello()">Click me</button>
+  <p id="output" class="hello" style="background: red"></p>
+  <button onclick="toggleColor()" id="btn1">CLICK ME</button>
+  <button onclick="moveButton()" id="btn2" style="left: 0">Click me to move me</button>
+  <script>
+    function hello() {
+      const name = prompt('Enter name');
+      const element = document.querySelector('#output');
+      console.log(typeof element);
+      console.dir(element);
+      element.textContent = 'Hello ' + name;
+      element.style.fontSize = '50px';
+    }
+    // Делаем кнопку красной при нажатии
+    //  function toggleColor () {
+    //   const btn = document.querySelector('#btn1');
+    //   console.dir(btn);
+    //   btn.style.backgroundColor = 'red';
+    //  }
+    //
+    // Делаем переключение при нажатии красная - бесцветная и меняем текст On / Off
+    function toggleColor() {
+      const btn = document.querySelector('#btn1');
+      if (btn.style.backgroundColor === 'red') {
+        btn.style.backgroundColor = 'transparent';
+        btn.textContent = 'Off';
+      } else {
+        btn.style.backgroundColor = 'red';
+        btn.textContent = 'On';
+      }
+    }
+    // При клике на кнопке сдвигаем её вправо на 50  px
+    function moveButton() {
+      btn2.style.position = 'relative';
+      btn2.style.transition = 'all 200ms';
+      const coords = parseInt(btn2.style.left);
+      btn2.style.left = coords + 50 + 'px';
+    }
+  </script> 
+<script type="text/javascript" src="playground_9-4.js"></script></body>
+ 
+</html>

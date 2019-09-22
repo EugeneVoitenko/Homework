@@ -1,14 +1,67 @@
-@import './styles/base.scss';
-@import './fonts.css';
+@font-face {
+  font-family: 'Hind-Light';
+  font-style: normal;
+  font-weight: 300;
+  src: url(./assets/fonts/Hind-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Arial-BoldMT';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./assets/fonts/ArialBoldMT.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'ArialMT';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./assets/fonts/ArialMT.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box; }
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px; }
+
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+p,
+hr {
+  margin: 0;
+  padding: 0; }
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden; }
+
+main {
+  display: block; }
+
+ul,
+ol {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+body {
+  background-color: #c4e6f0; }
 
 .header {
   height: 668px;
   background-color: #c4e6f0;
-  background-image: url(../../assets/images/london/header.jpg);
+  background-image: url(./assets/images/header.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-}
+  background-repeat: no-repeat; }
 
 .header__wrapper {
   height: 100%;
@@ -16,25 +69,21 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  position: relative;
-}
+  position: relative; }
 
 .weather-widget {
   display: flex;
   position: absolute;
   top: 33px;
-  left: 150px;
-}
+  left: 150px; }
 
 .weather-widget__icon {
   height: 37px;
-  margin-top: 6px;
-}
+  margin-top: 6px; }
 
 .weather-widget__details {
   margin-left: 12px;
-  text-align: left;
-}
+  text-align: left; }
 
 .weather-widget__temperature {
   font-family: ArialMT, Arial, Helvetica, sans-serif;
@@ -44,11 +93,9 @@
   font-stretch: normal;
   line-height: normal;
   letter-spacing: -0.48px;
-  color: #ffffff;
-  &::after {
-    content: '\00B0';
-  }
-}
+  color: #ffffff; }
+  .weather-widget__temperature::after {
+    content: '\00B0'; }
 
 .weather-widget__wind {
   font-family: ArialMT, Arial, Helvetica, sans-serif;
@@ -58,18 +105,13 @@
   font-stretch: normal;
   line-height: normal;
   letter-spacing: -0.48px;
-  color: #ffffff;
-
-  &::before {
+  color: #ffffff; }
+  .weather-widget__wind::before {
     content: 'wind:';
-    margin-right: 0.4em;
-  }
-
-  &::after {
+    margin-right: 0.4em; }
+  .weather-widget__wind::after {
     content: 'mph';
-    margin-left: 0.3em;
-  }
-}
+    margin-left: 0.3em; }
 
 .weather-widget__humidity {
   font-family: ArialMT, Arial, Helvetica, sans-serif;
@@ -79,18 +121,13 @@
   font-stretch: normal;
   line-height: normal;
   letter-spacing: -0.48px;
-  color: #ffffff;
-
-  &::before {
+  color: #ffffff; }
+  .weather-widget__humidity::before {
     content: 'humidity:';
-    margin-right: 0.4em;
-  }
-
-  &::after {
+    margin-right: 0.4em; }
+  .weather-widget__humidity::after {
     content: '%';
-    margin-left: 0.3em;
-  }
-}
+    margin-left: 0.3em; }
 
 .menu-button {
   background-color: transparent;
@@ -98,8 +135,7 @@
   border: none;
   position: absolute;
   top: 25px;
-  right: 150px;
-}
+  right: 150px; }
 
 .menu-button__bar {
   display: block;
@@ -108,31 +144,26 @@
   color: #ffffff;
   background-color: #ffffff;
   margin-top: 7px;
-  border: none;
-}
+  border: none; }
 
 .menu-button__top-bar {
-  margin-top: 0px;
-}
+  margin-top: 0px; }
 
 .logo {
   height: 45px;
   width: 41px;
-  margin-top: 106px;
-}
+  margin-top: 106px; }
 
 .line {
   height: 1px;
-  border: none;
-}
+  border: none; }
 
 .logo__line {
   width: 155px;
   color: #ffffff;
   background-color: #ffffff;
   position: relative;
-  bottom: 2px;
-}
+  bottom: 2px; }
 
 .header__text {
   width: 100%;
@@ -142,8 +173,7 @@
   font-stretch: normal;
   line-height: normal;
   letter-spacing: -1.74px;
-  color: #ffffff;
-}
+  color: #ffffff; }
 
 .header__slogan {
   width: 100%;
@@ -155,8 +185,7 @@
   line-height: 1em;
   letter-spacing: -0.87px;
   color: #ffffff;
-  margin-top: 0px;
-}
+  margin-top: 0px; }
 
 .button {
   font-family: Arial-BoldMT, Arial, Helvetica, sans-serif;
@@ -166,23 +195,19 @@
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
-  text-align: center;
-}
+  text-align: center; }
 
 .pill-button {
   border-radius: 100px;
   background-color: #2387f5;
   color: #ffffff;
-  border: none;
-  &:hover {
-    background-color: #0153aa;
-  }
-}
+  border: none; }
+  .pill-button:hover {
+    background-color: #0153aa; }
 
 .header__pill-button {
   padding: 17px 30px;
-  margin-top: 48px;
-}
+  margin-top: 48px; }
 
 .search-form {
   position: absolute;
@@ -197,9 +222,7 @@
   padding: 0px 19px 0;
   box-shadow: 0 20px 15.4px rgba(74, 74, 74, 0.25);
   display: flex;
-  align-items: center;
-
-}
+  align-items: center; }
 
 .search-form__input {
   width: 100%;
@@ -214,10 +237,11 @@
   background: transparent;
   border: none;
   outline: none;
-  margin-left: 12px;
-}
+  margin-left: 12px; }
 
 .search-form__button {
   height: 24px;
-  width: 24px;
-}
+  width: 24px; }
+
+
+/*# sourceMappingURL=london.css.map*/

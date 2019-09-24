@@ -23,7 +23,7 @@
 
 html {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px; }
+  font-size: 14px; }
 
 body,
 ul,
@@ -71,9 +71,16 @@ body {
   text-align: center;
   position: relative; }
 
-.weather-widget {
+.header__top-bar {
+  width: 100%;
   display: flex;
   position: absolute;
+  justify-content: space-between;
+  top: 33px;
+  padding: 0px 150px; }
+
+.weather-widget {
+  display: flex;
   top: 33px;
   left: 150px; }
 
@@ -133,7 +140,6 @@ body {
   background-color: transparent;
   padding: 11.5px 4px;
   border: none;
-  position: absolute;
   top: 25px;
   right: 150px; }
 
@@ -209,9 +215,16 @@ body {
   padding: 17px 30px;
   margin-top: 48px; }
 
+.content {
+  width: 100%;
+  height: 3243px;
+  background-image: linear-gradient(to bottom, #ffffff, #c4e6f0);
+  text-align: center; }
+
 .search-form {
-  position: absolute;
-  bottom: -25px;
+  position: relative;
+  margin: 0 auto;
+  top: -25px;
   width: 43%;
   max-width: 1400px;
   min-width: 220px;
@@ -220,7 +233,7 @@ body {
   background-color: #ffffff;
   text-align: left;
   padding: 0px 19px 0;
-  box-shadow: 0 20px 15.4px rgba(74, 74, 74, 0.25);
+  box-shadow: 0 5px 35.4px 10px rgba(74, 74, 74, 0.15);
   display: flex;
   align-items: center; }
 
@@ -242,6 +255,105 @@ body {
 .search-form__button {
   height: 24px;
   width: 24px; }
+
+.search-tip {
+  width: 100%;
+  font-family: ArialMT, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.16px;
+  text-align: center;
+  color: #565656;
+  margin-top: 18px; }
+
+.search-tip__keywords {
+  color: #888888; }
+
+.tabs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 50px; }
+
+.tab {
+  height: 267px;
+  width: 201px;
+  padding: 40px 18px 18px;
+  text-align: center; }
+
+.tab__content-wrapper {
+  height: 100%;
+  width: 100%;
+  overflow: hidden; }
+
+.tab__icon {
+  height: 60px; }
+
+.tab__name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.43px;
+  text-align: center;
+  color: #000000;
+  margin-top: 17px; }
+
+.tab__line {
+  width: 63px;
+  height: 2px;
+  color: #000000;
+  background-color: #000000;
+  margin: 15px auto 0;
+  visibility: hidden; }
+
+.tab__description {
+  font-family: ArialMT, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.16px;
+  text-align: center;
+  color: #565656;
+  margin-top: 15px; }
+
+.tab__text {
+  font-family: ArialMT, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.16px;
+  text-align: center;
+  color: #888888; }
+
+.footer {
+  width: 100%;
+  height: 106px;
+  background-color: #31363c;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.footer__text {
+  font-family: ArialMT, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.29px;
+  color: #4d6a8d; }
 
 
 /*# sourceMappingURL=london.css.map*/

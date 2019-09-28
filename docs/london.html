@@ -12,31 +12,161 @@
 
 <body>
   <header class="header">
-    <div class="header__wrapper">
-      <div class="header__weather-widget">
-        <img class="weather-widget__icon" src="./assets/images/rain.png" alt="Rain icon">
-        <div class="weather-details">
-          <p class="temperature">6</p>
-          <p class="wind">19</p>
-          <p class="humidity">70</p>
+    <div class="header__content-wrapper">
+      <div class="header__top-bar">
+        <div class="weather-widget">
+          <img class="weather-widget__icon" src="./assets/images/rain.png" alt="Rain icon">
+          <div class="weather-widget__details">
+            <p class="weather-widget__temperature">6</p>
+            <p class="weather-widget__wind">19</p>
+            <p class="weather-widget__humidity">70</p>
+          </div>
         </div>
+        <button class="menu-button">
+          <span class="menu-button__bar menu-button__top-bar"></span>
+          <span class="menu-button__bar"></span>
+          <span class="menu-button__bar"></span>
+        </button>
       </div>
-      <button class="main-menu__button">
-        <hr class="main-menu__line">
-        <hr class="main-menu__line">
-        <hr class="main-menu__line">
-      </button>
-      <img class="header__icon" src="./assets/images/london-eye-in-london-england.png" alt="">
-      <hr class="line header__line">
+      <img class="logo" src="./assets/images/london-eye-in-london-england.png" alt="">
+      <hr class="line logo__line">
       </hr>
-      <h1 class="header-text">LONDON</h1>
+      <h1 class="header__text">LONDON</h1>
       <p class="header__slogan">Explore the secret life of the city.</p>
-      <button class="button pill-button header__button">EXPLORE THE CITY</button>
+      <button class="button pill-button header__pill-button">EXPLORE THE CITY</button>
     </div>
   </header>
-  <main>
+  <div class="content">
+    <form class="search-form" action="#" name="site-search-form">
+      <img class="search-form__icon" src="./assets/images/search-icon.png" alt="Search icon">
+      <input class="search-form__input" type="search" name="search-value" placeholder="Search in the city" autofocus>
+    </form>
+    <p class="search-tip">Search for your favourite: <span class="search-tip__keywords">restaurant, museum, hotel,
+        attractions</span></p>
+    <div class="tabs">
+      <a href="#">
+        <div class="tab">
+          <div class="tab__content-wrapper">
+            <img class="tab__icon" src="./assets/images/hotel.png" alt="Accomodation">
+            <h2 class="tab__name">Accomodation</h2>
+            <hr class="line tab__line">
+            </hr>
+            <p class="tab__description">Perfect solution:</p>
+            <p class="tab__text">hotel, apartment, hostel, guest house</p>
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="tab">
+          <div class="tab__content-wrapper">
+            <img class="tab__icon" src="./assets/images/big-ben.png" alt="Tourist Attractions">
+            <h2 class="tab__name">Tourist Attractions</h2>
+            <hr class="line tab__line">
+            </hr>
+            <p class="tab__description">Search for your favourite:</p>
+            <p class="tab__text">restaurant, museum, hotel, attractions</p>
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="tab">
+          <div class="tab__content-wrapper">
+            <img class="tab__icon" src="./assets/images/hamburger.png" alt="Restaurants">
+            <h2 class="tab__name">Restaurants</h2>
+            <hr class="line tab__line">
+            </hr>
+            <p class="tab__description">You are hungry:</p>
+            <p class="tab__text">chinese food, burgers, traditional food</p>
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="tab">
+          <div class="tab__content-wrapper">
+            <img class="tab__icon" src="./assets/images/ticket.png" alt="Events & Tickets">
+            <h2 class="tab__name">Events & Tickets</h2>
+            <hr class="line tab__line">
+            </hr>
+            <p class="tab__description">It's time to have fun:</p>
+            <p class="tab__text">concerts, cinema, exhibitions</p>
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="tab">
+          <div class="tab__content-wrapper">
+            <img class="tab__icon" src="./assets/images/coffee-cup.png" alt="Coffee Shop">
+            <h2 class="tab__name">Coffee Shop</h2>
+            <hr class="line tab__line">
+            </hr>
+            <p class="tab__description">You must wake up:</p>
+            <p class="tab__text">Starbucks, Filicori, Nescafe, Lavazza</p>
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="tab">
+          <div class="tab__content-wrapper">
+            <img class="tab__icon" src="./assets/images/museum.png" alt="Gouvernement">
+            <h2 class="tab__name">Gouvernement</h2>
+            <hr class="line tab__line">
+            </hr>
+            <p class="tab__description">Must see:</p>
+            <p class="tab__text">parliament building, district court, royal house</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <main>
+      <section>
+        <div class="news__content-wrapper">
+          <h2 class=news__header>Latest news from <span class="news__header_line-through">London Blog</span></h2>
+          <h3 class="section__logo">news</h3>
+          <div class="slider">
+            <div class="slider__viewport">
+              <a href="#">
+                <div class="slide">
+                  <div class="slide__picture slide-1__picture"></div>
+                  <div class="slide__story-container">
+                    <h2 class="slide-story__header">Exploring the food in the heart of the London</h2>
+                    <div class="slide-story__date" datetime="2016-08-25"> 25 Aug, 2016</div>
+                    <p class="slide-story__description">Lorem Ipsum is simply dummy text of the printing and
+                      typesetting
+                      industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <div class="slide-story__author-container">
+                      <div class="slide-story__author-photo slide-story-1__author-photo"></div>
+                      <span class="slide-story__author">by Felecia Wilson</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="slide">
+                  <div class="slide__picture slide-2__picture"></div>
+                  <div class="slide__story-container">
+                    <h2 class="slide-story__header">The history and architecture of England</h2>
+                    <div class="slide-story__date" datetime="2016-08-25"> 25 Aug, 2016</div>
+                    <p class="slide-story__description">Lorem Ipsum is simply dummy text of the printing and
+                      typesetting
+                      industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <div class="slide-story__author-container">
+                      <div class="slide-story__author-photo slide-story-2__author-photo"></div>
+                      <span class="slide-story__author">by Noelle Garza</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <button class="button pill-button news__pill-button">MORE STORIES</button>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer class="footer">
+    <p class="footer__text">© Copyright 2016 by Andrei Rotariu</p>
+  </footer>
 
-  </main>
 <script type="text/javascript" src="london.js"></script></body>
 
 </html>

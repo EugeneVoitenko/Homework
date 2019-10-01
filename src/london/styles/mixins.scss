@@ -1,3 +1,23 @@
+@mixin blueBtn {
+  background-color: #2387f5;
+  color: #ffffff;
+  border: none;
+  &:hover {
+    background-color: #0153aa;
+  }
+}
+
+@mixin transparentBorderedBtn {
+  background-color: transparent;
+  color: #726c74;
+  border: 1px solid #000000;
+  &:hover {
+    border: none;
+    color: #ffffff;
+    background-color: #0153aa;
+  }
+}
+
 @mixin relativeHorizontalCenter {
   position: relative;
   left: 50%;

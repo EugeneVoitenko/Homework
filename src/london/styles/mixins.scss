@@ -1,9 +1,10 @@
 @mixin blueBtn {
   background-color: #2387f5;
   color: #ffffff;
-  border: none;
+  border: 1px solid #2387f5;
   &:hover {
     background-color: #0153aa;
+    border: 1px solid #0153aa;
   }
 }
 
@@ -12,7 +13,7 @@
   color: #726c74;
   border: 1px solid #000000;
   &:hover {
-    border: none;
+    border: 1px solid #0153aa;
     color: #ffffff;
     background-color: #0153aa;
   }

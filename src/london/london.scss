@@ -707,8 +707,12 @@ footer {
   transform: translateY(-50%);
 }
 
-.footer-about__text {
+.footer-column__content-wrapper {
   width: 80%;
+  margin-top: 52px;
+}
+
+.footer-column__text {
   font-family: $font-family-base;
   font-size: 12px;
   font-weight: normal;
@@ -717,7 +721,7 @@ footer {
   line-height: 1.92;
   letter-spacing: -0.29px;
   color: #a7c2dd;
-  margin-top: 52px;
+  
 }
 
 // .copyright {

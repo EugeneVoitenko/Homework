@@ -200,7 +200,6 @@ body {
 
 .main-content {
   width: 100%;
-  height: 3243px; //TODO: remove fixed height after all content will be added
   background-image: linear-gradient(to bottom, #ffffff, #c4e6f0);
   text-align: center;
 }
@@ -670,7 +669,58 @@ body {
   margin: 58px 47px 64px;
 }
 
-// .footer {
+footer {
+  width: 100%;
+  height: 398px; //TODO: Remove after footer will be finished
+  background-color: #2b3a4d;
+  padding: 55px 140px 46px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-column {
+  border-top: 1px solid #5a748f;
+  width: 100%;
+  margin: 0 10px;
+  text-align: left;
+  position: relative;
+}
+
+.footer-column-last {
+  border-top: none;
+}
+
+.footer-column__header {
+  position: absolute;
+  display: inline-block;
+  font-family: $font-family-base;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 5.14px;
+  text-align: left;
+  color: #668099;
+  background-color: #2b3a4d;
+  padding-right: 20px;
+  transform: translateY(-50%);
+}
+
+.footer-about__text {
+  width: 80%;
+  font-family: $font-family-base;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.92;
+  letter-spacing: -0.29px;
+  color: #a7c2dd;
+  margin-top: 52px;
+}
+
+// .copyright {
 //   width: 100%;
 //   height: 106px;
 //   background-color: #31363c;
@@ -680,7 +730,7 @@ body {
 //   margin-top: 100px;
 // }
 
-// .footer__text {
+// .copyright__text {
 //   font-family: $font-family-base;
 //   font-size: 12px;
 //   font-weight: normal;

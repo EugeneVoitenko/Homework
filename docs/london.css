@@ -225,7 +225,6 @@ body {
 
 .main-content {
   width: 100%;
-  height: 3243px;
   background-image: linear-gradient(to bottom, #ffffff, #c4e6f0);
   text-align: center; }
 
@@ -655,6 +654,52 @@ body {
   border-radius: 100px;
   background-image: linear-gradient(to right, #dc8ba1, rgba(200, 109, 215, 0));
   margin: 58px 47px 64px; }
+
+footer {
+  width: 100%;
+  height: 398px;
+  background-color: #2b3a4d;
+  padding: 55px 140px 46px;
+  display: flex;
+  justify-content: space-between; }
+
+.footer-column {
+  border-top: 1px solid #5a748f;
+  width: 100%;
+  margin: 0 10px;
+  text-align: left;
+  position: relative; }
+
+.footer-column-last {
+  border-top: none; }
+
+.footer-column__header {
+  position: absolute;
+  display: inline-block;
+  font-family: ArialMT, Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 5.14px;
+  text-align: left;
+  color: #668099;
+  background-color: #2b3a4d;
+  padding-right: 20px;
+  transform: translateY(-50%); }
+
+.footer-about__text {
+  width: 80%;
+  font-family: ArialMT, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.92;
+  letter-spacing: -0.29px;
+  color: #a7c2dd;
+  margin-top: 52px; }
 
 
 /*# sourceMappingURL=london.css.map*/

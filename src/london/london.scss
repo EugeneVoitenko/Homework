@@ -14,7 +14,7 @@ body {
 .header {
   height: 668px;
   background-color: #c4e6f0;
-  background-image: url(../../assets/images/london/header.jpg);
+  background-image: url(../../assets/images/london/header@2x.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -183,6 +183,7 @@ body {
   line-height: normal;
   text-align: center;
   transition: all 250ms;
+  outline: none;
   &:hover {
     transition: all 250ms;
   }
@@ -411,11 +412,11 @@ body {
 }
 
 .slide-1__picture {
-  background-image: url(../..//assets/images/london/story-1-photo.png);
+  background-image: url(../..//assets/images/london/story-1-photo@2x.png);
 }
 
 .slide-2__picture {
-  background-image: url(../..//assets/images/london/story-2-photo.png);
+  background-image: url(../..//assets/images/london/story-2-photo@2x.png);
 }
 
 .slide__story-container {
@@ -484,11 +485,11 @@ body {
 }
 
 .slide-story-1__author-photo {
-  background-image: url(..//..//assets/images/london/felecia-wilson.png);
+  background-image: url(..//..//assets/images/london/felecia-wilson@2x.png);
 }
 
 .slide-story-2__author-photo {
-  background-image: url(..//..//assets/images/london/noelle-garza.png);
+  background-image: url(..//..//assets/images/london/noelle-garza@2x.png);
 }
 
 .slide-story__author {
@@ -513,7 +514,7 @@ body {
 .about__content-wrapper {
   width: 100%;
   height: 1145px;
-  background-image: url(..//..//assets/images/london/clouds-background.png);
+  background-image: url(..//..//assets/images/london/clouds-background@2x.png);
   text-align: left;
   overflow: hidden;
   background-position: center;
@@ -564,13 +565,20 @@ body {
 .about__btn {
   margin-top: 45px;
   padding: 16px 54px;
-  @include transparentBorderedBtn;
+  background-color: transparent;
+  color: #726c74;
+  border: 1px solid #000000;
+  &:hover {
+    border: 1px solid #0153aa;
+    color: #ffffff;
+    background-color: #0153aa;
+  }
 }
 
 .about__picture {
   width: 642px;
   height: 534px;
-  background-image: url(..//..//assets/images/london/london-bridge.png);
+  background-image: url(..//..//assets/images/london/london-bridge@2x.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -669,13 +677,13 @@ body {
   margin: 58px 47px 64px;
 }
 
-footer {
+.footer__main-content {
   width: 100%;
-  height: 398px; //TODO: Remove after footer will be finished
   background-color: #2b3a4d;
   padding: 55px 140px 46px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .footer-column {
@@ -686,7 +694,8 @@ footer {
   position: relative;
 }
 
-.footer-column-last {
+.footer-column-newsletter {
+  width: 80%;
   border-top: none;
 }
 
@@ -712,9 +721,13 @@ footer {
   margin-top: 52px;
 }
 
+.newsletter__content-wrapper {
+  width: 100%;
+}
+
 .footer-column-articles {
-  font-family: $font-family-base;
   list-style-type: disc;
+  font-family: $font-family-base;
   color: #a7c2dd;
 }
 
@@ -750,7 +763,6 @@ footer {
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
-  // letter-spacing: 0.14px;
   color: #979797;
   margin: 0 12px;
 }
@@ -775,4 +787,63 @@ footer {
   line-height: 1.92;
   letter-spacing: -0.29px;
   color: #a7c2dd;
+}
+
+.newsletter-subscribe-form {
+  font-family: $font-family-base;
+  font-size: 14px;
+  color: #9cbada;
+  margin-top: 11px;
+}
+
+.newsletter-subscribe-form__input {
+  width: 100%;
+  background: transparent;
+  font-family: $font-family-base;
+  font-size: 14px;
+  color: #9cbada;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: -0.34px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #c4d4e5;
+  margin-top: 30px;
+  &::placeholder {
+    color: #9cbada;
+  }
+}
+
+.newsletter-subscribe-form__btn {
+  width: 100%;
+  margin-top: 37px;
+  padding: 12px 0px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #bccee2;
+  &:hover {
+    border: 2px solid #0153aa;
+    color: #ffffff;
+    background-color: #0153aa;
+  }
+}
+
+.footer-copyright {
+  width: 100%;
+  background-color: #31363c;
+  padding-top: 48px;
+  padding-bottom: 44px;
+}
+
+.footer-copyright__text {
+  font-family: $font-family-base;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.29px;
+  color: #4d6a8d;
 }

@@ -8,17 +8,6 @@
   }
 }
 
-@mixin transparentBorderedBtn {
-  background-color: transparent;
-  color: #726c74;
-  border: 1px solid #000000;
-  &:hover {
-    border: 1px solid #0153aa;
-    color: #ffffff;
-    background-color: #0153aa;
-  }
-}
-
 @mixin relativeHorizontalCenter {
   position: relative;
   left: 50%;

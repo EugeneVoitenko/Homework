@@ -706,6 +706,11 @@ body {
 .footer-column-article {
   margin-bottom: 11px; }
 
+.footer-column-article__link {
+  outline: none;
+  text-decoration: none;
+  color: #a7c2dd; }
+
 .footer-column-article__header {
   font-family: ArialMT, Arial, Helvetica, sans-serif;
   font-size: 14px;

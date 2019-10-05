@@ -735,6 +735,12 @@ body {
   margin-bottom: 11px;
 }
 
+.footer-column-article__link {
+  outline: none;
+  text-decoration: none;
+  color: #a7c2dd;
+}
+
 .footer-column-article__header {
   font-family: $font-family-base;
   font-size: 14px;

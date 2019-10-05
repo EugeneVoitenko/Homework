@@ -693,6 +693,53 @@ footer {
   width: 80%;
   margin-top: 52px; }
 
+.footer-column-articles {
+  font-family: ArialMT, Arial, Helvetica, sans-serif;
+  list-style-type: disc;
+  color: #a7c2dd; }
+
+.footer-column-article {
+  margin-bottom: 11px; }
+
+.footer-column-article__header {
+  font-family: ArialMT, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.14;
+  letter-spacing: -0.34px; }
+
+.footer-column-article__author {
+  font-family: ArialMT, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.14px;
+  color: #567392; }
+
+.footer-column-article__divider {
+  font-family: ArialMT, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  color: #979797;
+  margin: 0 12px; }
+
+.footer-column-article__date {
+  font-family: ArialMT, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.14px;
+  color: #567392; }
+
 .footer-column__text {
   font-family: ArialMT, Arial, Helvetica, sans-serif;
   font-size: 12px;

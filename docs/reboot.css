@@ -79,11 +79,11 @@ h4 {
 
 .link {
   color: #0070c9;
-  margin-top: 20px; }
+  margin-top: 20px;
+  text-align: center; }
   .link:after {
     content: '>';
-    margin-left: 0.25em;
-    position: absolute; }
+    padding-left: 0.25em; }
   .link:hover {
     text-decoration: underline; }
 

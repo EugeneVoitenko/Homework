@@ -59,11 +59,10 @@
 .link {
   color: $link-color-base;
   margin-top: 20px;
-
+  text-align: center;
   &:after {
     content: '>';
-    margin-left: 0.25em;
-    position: absolute;
+    padding-left: 0.25em;
   }
 
   &:hover {

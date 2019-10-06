@@ -287,17 +287,27 @@ body {
 .chapternav-tab {
   height: 267px;
   width: 201px;
-  padding: 40px 18px 18px;
+  padding: 12px 9px;
   text-align: center; }
   .chapternav-tab:hover {
     background-color: #2387f5; }
+  .chapternav-tab:hover .chapternav-tab__content-wrapper {
+    outline: 2px solid #ffffff;
+    outline-offset: -1px; }
   .chapternav-tab:hover .chapternav-tab__name {
     color: #ffffff; }
+  .chapternav-tab:hover .chapternav-tab__line {
+    visibility: visible; }
+  .chapternav-tab:hover .chapternav-tab__description {
+    color: #d1e7ff; }
+  .chapternav-tab:hover .chapternav-tab__text {
+    color: #d1e7ff; }
 
 .chapternav-tab__content-wrapper {
   height: 100%;
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 29px 9px 20px; }
 
 .chapternav-tab__icon {
   height: 60px;
@@ -337,9 +347,8 @@ body {
 
 .chapternav-tab__line {
   width: 63px;
-  height: 2px;
-  color: #000000;
-  background-color: #000000;
+  color: #ffffff;
+  background-color: #ffffff;
   margin: 15px auto 0;
   visibility: hidden; }
 

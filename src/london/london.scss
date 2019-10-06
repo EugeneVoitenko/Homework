@@ -453,6 +453,11 @@ body {
   justify-content: left;
   background-color: #ffffff;
   box-shadow: 0 2px 13px 0 rgba(204, 204, 204, 0.5);
+  transition: all 250ms;
+  &:hover {
+    transform: scale(1.04);
+    transition: all 250ms;
+  }
 }
 
 .slide__picture {

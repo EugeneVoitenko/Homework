@@ -270,8 +270,10 @@ body {
   width: 201px;
   padding: 12px 9px;
   text-align: center;
+  transition: all 250ms;
   &:hover {
     background-color: #2387f5;
+    transition: all 250ms;
   }
 
   &:hover .chapternav-tab__content-wrapper {

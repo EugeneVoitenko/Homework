@@ -288,9 +288,11 @@ body {
   height: 267px;
   width: 201px;
   padding: 12px 9px;
-  text-align: center; }
+  text-align: center;
+  transition: all 250ms; }
   .chapternav-tab:hover {
-    background-color: #2387f5; }
+    background-color: #2387f5;
+    transition: all 250ms; }
   .chapternav-tab:hover .chapternav-tab__content-wrapper {
     outline: 2px solid #ffffff;
     outline-offset: -2px; }

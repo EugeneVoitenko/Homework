@@ -270,6 +270,13 @@ body {
   width: 201px;
   padding: 40px 18px 18px;
   text-align: center;
+  &:hover {
+    background-color: #2387f5;
+  }
+
+  &:hover .chapternav-tab__name {
+    color: #ffffff;
+  }
 }
 
 .chapternav-tab__content-wrapper {
@@ -280,6 +287,33 @@ body {
 
 .chapternav-tab__icon {
   height: 60px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.chapternav-tab__icon-accomodation {
+  background-image: url(..//..//assets/images/london/hotel@2x.png);
+}
+
+.chapternav-tab__icon-tourist-attractions {
+  background-image: url(..//..//assets/images/london/big-ben@2x.png);
+}
+
+.chapternav-tab__icon-restaurants {
+  background-image: url(..//..//assets/images/london/hamburger@2x.png);
+}
+
+.chapternav-tab__icon-events-and-tickets {
+  background-image: url(..//..//assets/images/london/ticket@2x.png);
+}
+
+.chapternav-tab__icon-coffee-shop {
+  background-image: url(..//..//assets/images/london/coffee-cup@2x.png);
+}
+
+.chapternav-tab__icon-gouvernement {
+  background-image: url(..//..//assets/images/london/museum@2x.png);
 }
 
 .chapternav-tab__name {

@@ -4,19 +4,13 @@
 .page-content {
   min-height: 100vh;
   display: flex;
-  justify-content: center;
-  padding: 100px 20px;
-}
-
-.container {
-  max-width: 1140px;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding: 150px 40px 100px;
 }
 
-.header__icon {
+.reboot-icon {
   width: 80px;
   margin-bottom: 20px;
 }
@@ -72,8 +66,8 @@
 }
 
 @include tablet {
-  .content {
-    padding: 100px 20px;
+  .page-content {
+    padding: 150px 30px 100px;
   }
 
   .header {
@@ -91,12 +85,12 @@
 }
 
 @include mobile {
-  .content {
-    padding: 80px 20px;
+  .page-content {
+    padding: 70px 20px;
   }
 
-  .header__icon {
-    height: 70px;
+  .reboot-icon {
+    width: 70px;
   }
 
   .header {

@@ -7,6 +7,7 @@ html {
 
 body {
   min-height: 100vh;
+  min-width: 320px;
   padding: 0;
   margin: 0; }
 
@@ -33,17 +34,12 @@ h4 {
 .page-content {
   min-height: 100vh;
   display: flex;
-  justify-content: center;
-  padding: 100px 20px; }
-
-.container {
-  max-width: 1140px;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  padding: 150px 40px 100px; }
 
-.header__icon {
+.reboot-icon {
   width: 80px;
   margin-bottom: 20px; }
 
@@ -90,8 +86,8 @@ h4 {
     text-decoration: underline; }
 
 @media (max-width: 991px) {
-  .content {
-    padding: 100px 20px; }
+  .page-content {
+    padding: 150px 30px 100px; }
   .header {
     font-size: 52px; }
   .note__text {
@@ -101,10 +97,10 @@ h4 {
     font-size: 24px; } }
 
 @media (max-width: 575px) {
-  .content {
-    padding: 80px 20px; }
-  .header__icon {
-    height: 70px; }
+  .page-content {
+    padding: 70px 20px; }
+  .reboot-icon {
+    width: 70px; }
   .header {
     font-size: 26px;
     line-height: 1.1; }

@@ -293,7 +293,7 @@ body {
     background-color: #2387f5; }
   .chapternav-tab:hover .chapternav-tab__content-wrapper {
     outline: 2px solid #ffffff;
-    outline-offset: -1px; }
+    outline-offset: -2px; }
   .chapternav-tab:hover .chapternav-tab__name {
     color: #ffffff; }
   .chapternav-tab:hover .chapternav-tab__line {

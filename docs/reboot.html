@@ -11,18 +11,18 @@
 <link href="reboot.css" rel="stylesheet"></head>
 
 <body>
-  <div class="content">
+  <div class="page-content">
     <div class="container">
-      <img class="header-icon" src="./assets/images/reboot-icon.png" alt="Иконка перезагрузки" />
+      <img class="header__icon" src="./assets/images/reboot-icon.svg" alt="Иконка перезагрузки" />
       <h1 class="header">Перезагрузка сервера трансляций</h1>
-      <p class="note-text">
+      <p class="note__text">
         Если у большинства зрителей есть проблемы с просмотром, попробуйте
         перезагрузить сервер.
       </p>
       <form method="get" action="/nginx-reboot">
-        <button type="submit" class="reboot-button">Перезагрузить</button>
+        <button type="submit" class="reboot-btn">Перезагрузить</button>
       </form>
-        <a class="link" href="/stat">Посмотреть статистику</a>
+      <a class="link" href="/stat">Посмотреть статистику</a>
     </div>
   </div>
 <script type="text/javascript" src="reboot.js"></script></body>

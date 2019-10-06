@@ -30,11 +30,11 @@ h4 {
   margin: 0;
   padding: 0; }
 
-.content {
+.page-content {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  padding: 150px 20px; }
+  padding: 100px 20px; }
 
 .container {
   max-width: 1140px;
@@ -43,8 +43,8 @@ h4 {
   justify-content: space-between;
   align-items: center; }
 
-.header-icon {
-  height: 80px;
+.header__icon {
+  width: 80px;
   margin-bottom: 20px; }
 
 .header {
@@ -55,7 +55,7 @@ h4 {
   color: #333333;
   margin: 20px 0px; }
 
-.note-text {
+.note__text {
   font-size: 20px;
   font-weight: 300;
   line-height: 1.6;
@@ -63,7 +63,7 @@ h4 {
   color: darkgray;
   margin: 20px 0; }
 
-.reboot-button {
+.reboot-btn {
   background-color: #ff3b30;
   color: #ffffff;
   border: none;
@@ -73,8 +73,9 @@ h4 {
   padding: 13px 35px;
   font-size: 28px;
   letter-spacing: 0.025em;
-  box-shadow: 0 5px 15px 0 rgba(74, 74, 74, 0.25); }
-  .reboot-button:hover {
+  box-shadow: 0 5px 15px 0 rgba(74, 74, 74, 0.25);
+  transition: all 250ms; }
+  .reboot-btn:hover {
     background-color: #0070c9;
     transition: all 250ms; }
 
@@ -93,24 +94,24 @@ h4 {
     padding: 100px 20px; }
   .header {
     font-size: 52px; }
-  .note-text {
+  .note__text {
     font-size: 22px;
     padding: 0 20px; }
-  .reboot-button {
+  .reboot-btn {
     font-size: 24px; } }
 
 @media (max-width: 575px) {
   .content {
     padding: 80px 20px; }
-  .header-icon {
+  .header__icon {
     height: 70px; }
   .header {
     font-size: 26px;
     line-height: 1.1; }
-  .note-text {
+  .note__text {
     font-size: 15px;
     padding: 0 10px; }
-  .reboot-button {
+  .reboot-btn {
     padding: 13px 35px;
     font-size: 17px;
     margin: 15px 0 30px; } }
